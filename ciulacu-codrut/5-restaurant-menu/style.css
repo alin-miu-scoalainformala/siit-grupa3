@@ -1,0 +1,68 @@
+html, div, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: orange;
+}
+
+.header{
+    margin: 2%;
+}
+
+.header p{
+    float: right;
+}
+
+.main .input{
+    padding: 2%;
+}
+
+.main .input button{
+    margin-left: 1%;
+} 
+
+.menu .food{
+    margin: 9% 0 0 1%;
+}
+
+.menu .food img{
+    float: left;
+}
+
+.menu .food p{
+    float: left;
+    padding-left: 1%;
+}
+.menu .food .right{
+    float: right;
+    padding-right: 1%;
+}
+
+#btn1{
+    float: left;
+    margin: 0 0 2% 2%;
+}
+
+#btn2{
+    float: right;
+    margin: 0 2% 2% 0;
+}
+
+#butoane{
+    margin: 0 0 30px 0;
+}
+
+#adresa{
+    margin: 2%;
+}
+
+#map{
+    margin: 2%;
+}
+
+.page{
+    margin: 2% 2% 2% 20%;
+
+}

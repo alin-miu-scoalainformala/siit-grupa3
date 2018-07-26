@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meniu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="getDetailsOfFood(getUrlVars()['id']);">
+        <div id="butoane">
+            <p id="btn1">
+                <a class="btn btn-lg btn-success" role="button" href="contact.html">Contact Us!</a>
+            </p>
+            <p id="btn2">
+                <a class="btn btn-lg btn-danger" role="button" href="index.html">Meniu</a>
+            </p>
+        </div><br/><br/>
+
+
+        <div class="page">
+            <img id="img">
+            <h3 id="titlu"></h3>
+            <p id="ingrediente"></p>
+            <p id="desc"></p>
+        </div>
+    </body>
+</html>
