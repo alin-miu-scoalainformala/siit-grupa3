@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agenda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    
+</head>
+<body>
+    <div id="container">
+       <h1> Agenda</h1>
+       
+        <div id="header">
+           <form>
+           <div id="datele">
+           Nume:&nbsp; &nbsp;<input type="text" id="nume" name="nume" placeholder="ex: Ionel"> &nbsp;
+           Telefon:&nbsp;&nbsp;<input type="text" id="telefon" name="telefon" placeholder="ex: 0712345678">
+           	</div>
+           	 <br>
+			   <div id="butonul">
+			   	<input type="button" id="buton" value="ADAUGA CONTACT" onClick="adaugaContact()" onKeyPress="VerificareAdaugaContact()">
+	       	   </div>
+           </form>
+           
+            
+
+        </div>
+
+        <div id="main">
+			<div id="tabelul">
+				<table id="tabel" align="center">
+					<thead>
+						<th>Nume</th>
+						<th>Telefon</th>
+						<th></th>
+						<th></th>
+					</thead>
+					
+				<tbody id="continut">
+
+      		    </tbody>
+      		    
+				</table>
+        	</div>
+
+        </div>
+    </div>
+    
+    
+    <script>
+		function adaugaContact(){
+			var nume = document.getElementById('nume').value;
+			var tel = document.getElementById('telefon').value;
+			if(nume !="" && tel !=""){	
+				var body = document.getElementById('continut').innerHTML;
+				var adaugare = `		   
+					<tr>
+						<td class="nume">`+nume+`</td>
+						<td class="telefon">`+tel+`</td>
+						<td class="modifica"><a href="javascript:void(0)" onclick="modificaContact(this);"> modifica</a></td>
+						<td class="sterge"><a href="javascript:void(0)" onclick="stergeContact(this);"> sterge</a></td>
+					</tr>
+				`;
+				document.getElementById('continut').innerHTML= body + adaugare;
+				document.getElementById('nume').value='';
+				document.getElementById('telefon').value='';
+			}else{
+				alert("Campurile sunt obligatorii!");
+			}
+		}
+		document.getElementById("telefon").onkeypress = function(event){
+			if (event.keyCode == 13 || event.which == 13){
+			adaugaContact();
+			}
+		};
+		function stergeContact(thiss){
+			var row = thiss.parentNode.parentNode;
+			row.parentNode.removeChild(row);
+		}
+		
+		function modificaContact(thiss){
+			var row = thiss.parentNode.parentNode;
+			var trIndex = row.rowIndex;
+			var rowContent = document.getElementsByTagName('tr').item(trIndex);
+			var nume = rowContent.getElementsByClassName('nume')[0].innerHTML;
+			var telefon = rowContent.getElementsByClassName("telefon")[0].innerHTML;
+			 
+			document.getElementById('nume').value=nume;
+			document.getElementById('telefon').value=telefon;
+			
+			document.getElementById('butonul').setAttribute("modificat", trIndex);
+			document.getElementById('butonul').innerHTML='<input type="button" id="buton" value="SALVEAZA MODIFICAREA" onClick="salveazaModificariContact()">';
+		}
+		function salveazaModificariContact(thiss){
+			document.getElementById('butonul').innerHTML='<input type="button" id="buton" value="ADAUGA CONTACT" onClick="adaugaContact()">';
+			
+			var nume = document.getElementById('nume').value;
+			var tel = document.getElementById('telefon').value;
+			if(nume !="" && tel !=""){
+				var trIndex = document.getElementById('butonul').getAttribute('modificat');
+				var rowContent = document.getElementsByTagName('tr').item(trIndex);
+				rowContent.getElementsByClassName('nume')[0].innerHTML = nume;
+				rowContent.getElementsByClassName("telefon")[0].innerHTML = tel;
+				
+				document.getElementById('nume').value='';
+				document.getElementById('telefon').value='';
+			}else{
+				alert("Campurile sunt obligatorii!");
+			}
+		}
+    </script>
+    
+</body>
+</html>

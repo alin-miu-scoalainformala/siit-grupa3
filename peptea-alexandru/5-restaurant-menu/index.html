@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Restaurant Coral</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="meniu.css" />
+	<script src="meniu.js"></script>
+</head>
+
+<body onLoad="getDataFromServer();">
+	<div id="container">
+
+		<div id="cald">
+			<h1>Cald si bun</h1>
+
+		</div>
+		<div id="botoaneDreapta">
+			<input type="button" id="contact" value="Contact">
+			<a href="meniu.html"><input type="button" id="meniu" value="Meniu"></a>
+		</div>
+
+		<div id="main">
+
+			<div id="butoaneStanga">
+				<input type="text" id="input"> &nbsp;
+				<input type="button" id="buton" value="Cauta in ingrediente" onClick="cautaElementele();">
+			</div>
+			<div id="continut">
+				<div class="food">
+
+					<div class="imagine">
+						<img src="hailea.jpg" class="imagineProdus">
+					</div>
+
+					<div class="detalii">
+						<h3>Produs</h3>
+						<p class="reteta">Reteta</p>
+						
+					</div>
+
+					<div class="detaliiProdus">
+						<input type="button" class="butonProdus" value="DETALII">
+					</div>
+
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/*CSS - shopping */
+
+body {
+    background-color: #D0BCFE;
+}
+#header {
+	background-color: #FFFDFF;
+	width: 800px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	font-size: 18px;
+	 
+}
+
+h1 {
+	text-align: center;
+	font-size: 45px;
+	margin: 40px;
+}
+
+
+#buton{
+	background-color: #19E857;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+
+
+#tabel {
+	
+	font-size: 20px;
+	text-align: center;
+	
+	
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+	margin-top: 15px;
+}
+
+
+#tabelul {
+	padding-top: 35px;
+}
+
+#asc, #desc {
+	background-color: #D0BCFE;
+	
+}
+
+#datele {
+	text-align: center;
+	padding: 25px;
+}
+
+
+
+#butoane {
+	text-align: center;
+}
+
+#produs {
+	height: 25px;
+}
+
+

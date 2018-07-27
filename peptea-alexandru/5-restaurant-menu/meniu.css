@@ -1,0 +1,91 @@
+
+#container {
+	
+	padding: 40px;
+	/*width: 100%;
+	height: 100; */
+}
+/*CSS - MENIU REST. */
+#buton {
+	background-color: #BBA7DB;
+	height: 40px;
+	font-size: 17px;
+	border-radius: 7px;
+}
+
+#input {
+	height: 30px;
+	width: 200px;
+	
+}
+
+#contact {
+	background-color: #6796F8;
+	height: 45px;
+    width: 75px;
+    font-size: 17px;
+	border-radius: 7px;
+	
+}
+
+#botoaneDreapta {
+	float: right;
+	padding-right: 50px;
+    padding-top: 25px;
+	
+}
+
+#cald {
+	float: left;
+	clear: both;
+	
+}
+
+#butoaneStanga {
+	clear: both;
+	
+}
+
+#meniu {
+	background-color: #E34262;
+	    height: 45px;
+    width: 75px;
+    font-size: 17px;
+	border-radius: 7px;
+	
+}
+
+
+.imagineProdus {
+	width: 169px;
+	height: 169px;
+	    float: left;
+	
+}
+
+.food {
+	    margin-top: 50px;
+}
+
+.detalii {
+	 float: left;
+	margin-left: 4%;
+}
+
+.butonProdus {
+	background-color: #E34262;
+    height: 50px;
+    width: 85px;
+    font-size: 17px;
+    border-radius: 7px;
+    float: right;
+    margin-right: 2%;
+}
+
+body {
+	background-color: #BAF4ED;
+}
+
+#imagineProdus {
+	margin-top: 50px;
+}
