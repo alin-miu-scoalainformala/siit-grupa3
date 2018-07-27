@@ -1,7 +1,61 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SHOPPING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    
+    
+    <script src="shopping.js">
+    </script>
+    
+</head>
 <body>
-    TODO: implementare shopping list
-</body>
+    <div id="container">
+       <h1>SHOPPING LIST</h1>
+       
+        <div id="header">
+           
+			   <div id="datele">
+				   <form>
+					   <input type="text" id="produs" name="nume" placeholder="ex: Lapte"> &nbsp;
+					   <input type="button" id="buton" value="Add intem" onClick="adaugaProdus();">
+				   </form>
+			   </div>
+				 <br>
 
+				<div id="main">
+					<div id="butoane">
+					 <input type="button" onClick="sorteaza('asc');" id="asc" value="Sort asc">
+					 <input type="button" onClick="sorteaza('desc');" id="desc" value="Sort desc">
+					</div>
+					<div id="zonatabel">
+						<table id="tabel" align="center">
+
+							<thead>
+								<th>Item description</th>
+								<th>Action</th>
+								
+								
+							</thead>
+
+							<tbody>
+
+							</tbody>
+
+						</table>
+					</div>
+
+				</div>
+                      
+            
+		</div>
+     </div>
+
+       
+    
+</body>
 </html>

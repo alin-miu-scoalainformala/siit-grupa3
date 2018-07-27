@@ -1,0 +1,74 @@
+/*CSS - AGENDA */
+
+body {
+    background-color: #FEF8E1;
+}
+#header {
+	background-color: #FFCA28;
+	width: 800px;
+	height: 190px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	font-size: 18px;
+	 
+}
+
+h1 {
+	text-align: center;
+	font-size: 45px;
+	margin: 40px;
+}
+form {
+	padding-top: 20px;
+}
+
+#buton{
+	background-color: #3F50B5;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 10px;
+}
+#butonul {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#main{
+	background-color: #FFCA28;
+	width: 800px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	
+}
+
+#datele {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+	
+}
+
+#tabel {
+	
+	font-size: 20px;
+	text-align: center;
+	
+	
+}
+table, th, td {
+    border: 1px solid black;
+}
+th {
+	width: 140px;
+}
+
+#tabelul {
+	padding-top: 35px;
+}

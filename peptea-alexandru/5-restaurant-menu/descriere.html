@@ -10,7 +10,7 @@
 	<script src="meniu.js"></script>
 </head>
 
-<body onLoad="getDataFromServer();">
+<body onLoad="getDataFromServer2(getUrlVars()['id'])">
 	<div id="container">
 
 		<div id="cald">
@@ -23,31 +23,28 @@
 		</div>
 
 		<div id="main">
-
-			<div id="butoaneStanga">
-				<input type="text" id="input"> &nbsp;
-				<input type="button" id="buton" value="Cauta in ingrediente" onClick="cautaElementele();">
-			</div>
+		<br>
+		<br><br>
+		
 			<div id="continut">
-				<div class="food">
+			
 
-					<div class="imagine">
-						<img src="hailea.jpg" class="imagineProdus">
+					<div id="divImagineProdus">
+						<img src="" id="ImagineProdus">
 					</div>
-
-					<div class="detalii">
-						<h3>Produs</h3>
-						<p class="reteta">Reteta</p>
+					<br> <br>
+					<div>
+						<h3 id="h3Produs">Produs</h3>
+						<p id="pReteta">Reteta</p>
+						<p id="pIngredinte">Ingrediente</p>
 						
 					</div>
-
-					<div class="detaliiProdus">
-						<input type="button" class="butonProdus" value="DETALII">
-					</div>
+					<br> <br>
 
 
 
-				</div>
+
+				
 
 			</div>
 		</div>
