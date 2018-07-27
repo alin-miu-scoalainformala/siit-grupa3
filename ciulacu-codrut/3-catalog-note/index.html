@@ -1,7 +1,61 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="left">
+            <h2>Lista elevi</h2>
+            <div class="form">
+                <label>Nume:</label>
+                <input type="text" id="nume">
+                <input type="submit" value="Adauga elev" onclick="addElev();">      
+            </div>
 
-<body>
-    TODO: implementare catalog de note
-</body>
+            <div class="tabel">
+                <a href="#" onclick="sortByMedie('asc');">Sorteaza ascendent dupa medie note</a><br/>
+                <a href="#" onclick="sortByMedie('desc');">Sorteaza descendent dupa medie note</a>
+                <table cellspacing="10" id="table1">
+                    <thead>
+                        <th>
+                            <strong>Nume</strong>
+                        </th>
+                        <th>
+                            <strong>Medie note</strong>
+                        </th>
+                        <th></th>
+                    </thead>
+                    <tbody id="body1">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="right">
+            <button onclick="unshowNote();">Ascunde notele</button>
+            <h2>Note elev: <span id="elev"></span></h2>
 
+            <div class="form">
+                    <label>Nume:</label>
+                    <input type="text" id="nota">
+                    <input type="submit" value="Adauga elev" onclick="adaugaNota();">      
+                </div>
+    
+                <div class="tabel">
+                    <a href="javascript:sortByNote('asc');">Sorteaza ascendent dupa medie note</a><br/>
+                    <a href="javascript:sortByNote('desc');">Sorteaza descendent dupa medie note</a>
+                    <table cellspacing="10" id="table2">
+                        <thead>
+                            <th>
+                                <strong>Nota</strong>
+                            </th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </body>
 </html>

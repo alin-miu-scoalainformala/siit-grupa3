@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meniu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+              crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function showMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB1J7ZFZXJFJsG-UtHd9_po33LvDDRwic"></script>
+    </head>
+
+    <body onload="showMap()">
+        <div class="header">
+            <p>
+                <a class="btn btn-lg btn-primary" role="button" href="index.html">Meniu!</a>
+            </p>
+            <h3>Califoodication</h3>
+        </div>
+        <div class="main">
+            <p id="adresa">Adresa: Strada Smechera, prima acolo</p>
+            <div id="map" style="width: 400px; height: 400px; background-color: white;">
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
