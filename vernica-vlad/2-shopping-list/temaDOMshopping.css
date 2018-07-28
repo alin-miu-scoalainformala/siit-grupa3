@@ -1,0 +1,103 @@
+body {
+    font-family: 'Cario';
+    text-align: center;
+    background-image: url('https://goo.gl/ku9QbG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shoppingList {
+    width: 800px;
+    margin: auto;
+    font-family: 'Cairo';
+    padding: 50px 0 50px 0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+input {
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+    width: 200px;
+    text-align: center;
+    outline: none;
+}
+
+button {
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#inputArea {
+    width: 308px;
+    margin: auto;
+}
+
+#addButton {
+    background-color: lightgreen;
+}
+
+#addButton:hover {
+    background-color: greenyellow;
+}
+
+#sortButtonsArea {
+    width: 308px;
+    text-align: left;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.sortButtons {
+    background-color: lightcyan;
+}
+
+.sortButtons:hover {
+    background-color: cyan;
+}
+
+table {
+    width: 308px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+th {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+td {
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.itemDescription {
+    width: 200px;
+}
+
+.action {
+    width: 108px;
+}
+
+.actionButton {
+    width: inherit;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle;
+    background-color: firebrick;
+    color: white;
+}
+
+.actionButton:hover {
+    background-color: lightcoral;
+}
