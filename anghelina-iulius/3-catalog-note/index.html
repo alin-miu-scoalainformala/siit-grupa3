@@ -1,7 +1,70 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIIT Tema 5: Catalog de note</title>
+    <link rel="icon" href="catalog.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Exo|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    TODO: implementare catalog de note
-</body>
+<div class="main-wrapper">
+    <div class="wrapper">
+        <header>
+            <h1>Catalog Elevi</h1>
+        </header>
 
+        <form class="add-student">
+            <label for="name"></label><input type="text" id="name" placeholder="adaugă nume.." autofocus>
+            <button type="submit" id="add-student" onclick="addStudent(studentArray); generateStudentList(studentArray)">Adaugă Elev</button>
+        </form>
+
+        <button type="button" class="sort" onclick="averageSortAsc()">Sorteaza Ascendent</button>
+        <button type="button" class="sort" onclick="averageSortDesc()">Sorteaza Descendent</button>
+        <table class="student-list">
+            <thead class="table-header">
+                <th>Nume</th>
+                <th>Medie Note</th>
+                <th></th>
+            </thead>
+            <tbody id="table-body">
+                <td>Niciun elev adăugat</td>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="secondary-wrapper">
+        <button type="button" class="hide" onclick="hideGrades()">Ascunde Notele</button>
+
+        <h2 class="grade-title">Notele elevului:</h2>
+        <h2 class="student-name"></h2>
+    
+        <form class="add-grade">
+        </form>
+        <p class="error">Nota trebuie să fie între 0 și 10!</p>
+        <button type="button" class="sort-grade" onclick="gradeSortAsc()">Sortează Ascendent</button>&nbsp;
+        <button type="button" class="sort-grade" onclick="gradeSortDesc()">Sortează Descendent</button>
+        <table class="student-grade-list">
+            <thead class="table-header">
+                <th>Note</th>
+            </thead>
+            <tbody class="table-body">
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+
+<footer>    
+    <div>Homework assignment, The Informal School of IT</div>
+    <div>© 2018: <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a></div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>

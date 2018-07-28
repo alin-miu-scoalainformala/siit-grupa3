@@ -1,0 +1,168 @@
+:root {
+    --bluesky: #4cb5f5; 
+    --granite: #b7b8b6; 
+    --pine: #34675c; 
+    --fields: #b3c100; 
+}
+
+* {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+body {
+    background-color: var(--granite);
+}
+#main-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+#input {
+    position: relative;
+    z-index: 1;
+    background-color: var(--bluesky);
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    box-shadow: 2px 2px 7px rgb(58, 58, 58);
+}
+#enter-city {
+    width: 50%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+#enter-city::placeholder {
+    font-size: 1.4rem;
+}
+#button-get-weather, #button-get-forecast {
+    background-color: var(--pine); 
+    color: white;
+    width: 21%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 2.2%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#button-get-weather:hover, #button-get-forecast:hover {
+    background-color: var(--fields);
+    color: var(--pine);
+    border: 2px solid var(--pine);
+}
+#current-weather {
+    position: relative;
+    background-color: var(--pine);
+    padding: 20px;
+    margin: 0 20px;
+    height: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'image map map map'
+        'current map map map'
+        'current map map map'
+}
+#current-weather img {
+    grid-area: image;
+    margin-left: 20%;
+    width: 100px;
+}
+h2 {
+    grid-area: header;
+    font-size: 220%;
+    border-bottom: 1px solid white;
+    margin: 0 10px;
+    color: white;
+}
+.current {
+    color: white;
+    grid-area: current;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+.map {
+    margin-top: 30px; 
+    margin-left: -30px;
+    grid-area: map;
+    width: 102%;
+    height: 245px;
+    box-shadow: 0px 0px 10px rgb(46, 46, 46);
+}
+.map iframe {
+    width: 100%; 
+    height: 100%;
+    border: none;
+}
+#forecast {
+    background-color: var(--fields);
+    padding: 20px;
+    margin: 0 20px;
+    position: relative;
+    z-index: -2;
+    top: -50px;
+    max-height: 30px;
+    box-shadow: inset 2px 2px 15px rgb(80, 80, 80);
+    -webkit-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+th {
+    background-color: var(--pine);
+    color: white;
+    border: 5px solid var(--fields);
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+#list {
+    padding: 0 10px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'azi maine poimaine raspoimaine rasraspoimaine rasrasraspoimaine';
+    grid-gap: 10px;
+}
+.azi { grid-area: azi; }
+.maine { grid-area: maine; }
+.poimaine { grid-area: poimaine; }
+.raspoimaine { grid-area: raspoimaine; }
+.rasraspoimaine { grid-area: rasraspoimaine; }
+.rasrasraspoimaine { grid-area: rasrasraspoimaine; }
+
+#list ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #main-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #enter-city {
+        width: 97%;
+    }
+    #button-get-weather, #button-get-forecast {
+        width: 45%;
+        margin-top: 20px;
+        margin-right: 2.2%;
+    }
+}

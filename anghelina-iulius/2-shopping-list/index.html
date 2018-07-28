@@ -1,7 +1,46 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping list - with DB</title>
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Basic|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getListEntries(); getItems();">
+<div class="main-wrapper">
+    <h1>Shopping List <span class="h1-xs">with DB connection</span></h1>
 
-<body>
-    TODO: implementare shopping list
+    <div class="wrapper">
+        <form class="shoppingList">
+            <input type="text" class="input" placeholder="Enter item name">
+            <input type="submit" class="mainButton" value="Add Item" onclick="addItem(items); getItems(items); showhideList()">
+
+        </form>
+
+        <div class="main">
+            <input type="button" class="button" value="Sort Ascending" onclick="sortAsc(items); getItems(items);">
+            <input type="button" class="button" value="Sort Descending" onclick="sortDesc(items); getItems(items);">
+            <input type="button" class="button-red" id="clear" value="Clear List" onclick="clearAll(items)">
+            <table class="table">
+                <thead>
+                    <th>Item Description</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            
+            <input type="button" class="button-mark" id="mark" value="Mark All" onclick="markAll(items)">
+
+        </div>
+        <footer>    
+            <div>Homework assignment, The Informal School of IT</div>
+            <div>© 2018: <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a></div>
+        </footer>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
