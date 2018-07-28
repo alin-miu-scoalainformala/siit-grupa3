@@ -1,0 +1,46 @@
+#location{
+    width: 30%;
+    margin-left: 10px;
+    color : white;
+}
+
+
+ div h2{
+    text-align: center;
+    color : white;
+}
+p{
+    text-align: center;
+    color : white;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table th{
+    text-align: center;
+    color : white;
+}
+input{
+    border-radius: 15px;
+    color : #00e6e6;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    text-align: center
+};
+div{
+    background-color: black
+}
+#span{
+  text-align: center;  
+    
+}
+div  button{
+    background-color: #00e6e6;
+    border-color: #00e6e6;
+    border-radius: 15px;
+}
+hr{
+    background-color: #00e6e6
+}

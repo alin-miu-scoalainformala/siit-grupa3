@@ -1,0 +1,44 @@
+h4{
+  float: left;
+  width: 100%;
+}
+.adaugaNote{
+  text-align: center ;
+  width: 100%
+}
+.delbutton{
+  font-family: sans-serif;
+  color: #FFF;
+  font-size: 12px;
+  padding: 5px;
+  background: red;
+  border-radius: 18px;
+  text-decoration: none;
+  float: right;
+  position: relative;
+  
+}
+.nume{
+  color: white;
+  font-size: 20px;
+  float: left;
+}
+.media{
+  display: inline;
+  float: initial
+}
+.avg{
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+.x{
+  color: red;
+  
+  
+}
+li{
+  
+  width: 50px;
+  list-style: none
+}
