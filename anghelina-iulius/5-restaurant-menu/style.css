@@ -1,0 +1,275 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+:root {
+   --mainHover: #f77604; 
+   --bkgTrsp: #ffffffab;
+   --mainColor: rgba(224, 138, 8, 0.705);
+   --mainColorShadow: rgb(139, 86, 5);
+   --darkOne: #231b12c4;
+}
+
+body {
+    margin: 0;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+}
+header {
+    position: fixed;
+    background-color: var(--mainHover);
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 2px 5px 30px var(--mainColorShadow);
+    z-index: 9;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    text-shadow: 1px 1px 10px var(--darkOne);
+}
+header h1 {
+    position: relative;
+    top: -45px;
+    left: 70px;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 1.6px;
+    width: 480px;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--darkOne);
+    margin: 0 auto;
+    border-bottom: 2px solid var(--darkOne);
+}
+#main-wrapper {
+    width: 70%;
+    margin: 100px auto 0 auto;
+    background-color: var(--bkgTrsp);
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 80px var(--mainColorShadow);
+    min-height: 580px;
+}
+#main-wrapper button {
+    margin: 0;
+    border: 0;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 1.2rem;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#contact button {
+    position: relative;
+    float: right;
+    height: 60px;
+    margin-top: -100px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--mainColor);
+    z-index: 1;
+    transform: scale(0.98);
+}
+#contact button:hover {
+    box-shadow: 1px 1px 10px var(--darkOne);
+    background-color: var(--mainHover);
+    transform: scale(1);
+}
+#main-wrapper button:active {
+    box-shadow: none;
+}
+.filter {
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+.filter input {
+    width: 99%;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+.filter input::placeholder {
+    color: var(--mainHover);
+}
+#line {
+    border-bottom: 5px solid var(--mainHover);
+    position: relative;
+    top: -32px;
+    width: 91%;
+    margin: 0 0 0 auto;
+    z-index: 0;
+}
+#details-line {
+    border-bottom: 5px solid var(--mainHover);
+    position: relative;
+    top: -32px;
+    width: 97%;
+    margin: 0 0 0 auto;
+    z-index: 0;
+}
+#title h1 {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    color: var(--mainHover);
+    margin: 10px;
+    text-shadow: 3px 3px 15px white;
+    z-index: 1;
+}
+#details h2 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.8rem;
+    margin: 20px 0;
+    color: var(--mainHover);
+    text-shadow: 3px 3px 15px white;
+}
+#details-contact button {
+    position: relative;
+    float: right;
+    height: 45px;
+    margin-top: 45px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--mainColor);
+    z-index: 3;
+}
+#details-contact button:hover {
+    box-shadow: 1px 1px 10px var(--darkOne);
+    background-color: var(--mainHover);
+}
+#details img {
+    width: 500px;
+    position: relative;
+    float: right;
+    margin: -20px 0 20px 20px;
+    border: 5px solid var(--mainColor);
+    border-radius: 35px;
+    box-shadow: 2px 2px 15px var(--darkOne);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#details img:hover, #details img:focus {
+    transform: scale(1.2);
+    z-index: 4;
+}
+#details p {
+    font-size: 1.5rem;
+}
+#main-wrapper #back-button {
+    background-color: var(--mainColor);
+    margin: 0;
+    width: 200px;
+}
+#main-wrapper #back-button:hover {
+    box-shadow: 2px 2px 15px var(--darkOne);
+    background-color: var(--mainHover);
+}
+.menu-item {
+    background-color: var(--mainColor);
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 3px var(--darkOne); 
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    color: white;
+    min-height: 210px;
+    font-size: 1.3rem; 
+    transform: scale(0.99);
+}
+.menu-item:hover {
+    background-color: var(--mainHover);
+    cursor: pointer;
+    box-shadow: 4px 4px 20px var(--darkOne);
+    transform: scale(1);
+}
+.menu-item img {
+    width: 200px;
+    position: relative;
+    margin-left: 45px;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px var(--darkOne);
+
+}
+.menu-item h2 {
+    color: var(--darkOne);
+    border-bottom: 2px solid var(--darkOne);
+    font-size: 2.3rem;
+    margin: 0;
+}
+#contact h1 {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    color: var(--mainHover);
+    margin: 0;
+    text-shadow: 3px 3px 15px white;
+    z-index: 1;
+}
+#contact-line {
+    border-bottom: 5px solid var(--mainHover);
+    position: relative;
+    top: -20px;
+    width: 95%;
+    margin: 0 0 0 auto;
+    z-index: 0;
+}
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px; 
+    box-shadow: 2px 2px 15px var(--darkOne);
+}
+#contact #back-button {
+    display: block;
+    float: left;
+    background-color: var(--mainColor);
+    margin: 0;
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+#contact #back-button:hover {
+    box-shadow: 2px 2px 15px var(--darkOne);
+    background-color: var(--mainHover);
+}
+footer {
+    color: var(--darkOne);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+footer a {
+    text-decoration: none;
+    color: var(--mainHover);
+    -webkit-transition: all 0.3s, color 0.5s;
+    transition: all 0.3s, color 0.5s;
+}
+footer a:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 3px white;
+}
+@media only screen and (max-width: 1300px) {
+    #main-wrapper {
+        width: 94%;
+    }
+}

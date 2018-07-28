@@ -5,29 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Menu</title>
+    <title>Detalii Produs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Allura|Nobile|PT+Sans|Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="getMenu()">
+<body onload="getDetails()">
     <header onclick="window.location.href='index.html'">
         <h2>Restaurant</h2>
         <h1>Casa Informală</h1>
     </header>
     <div id="main-wrapper">
-        <div id="title">
-            <h1>Meniu</h1>
-        </div>
-        <div id="line"></div>
-        <div id="contact">
+        <div id="details-contact">
             <button type="button" onclick="window.location.href='contact.html'">Contact</button>
         </div>
-        <div class="filter">
-            <input type="text" name="filter" id="filter" placeholder="Caută în ingrediente...">
+        <div id="details">
+            <!-- code injected here -->
         </div>
-        <div id="main-menu">
-        </div>
+
     </div>
     <footer>
         <div>Homework assignment, The Informal School of IT</div>
@@ -35,8 +32,7 @@
             <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="details.js"></script>
 </body>
 
 </html>
