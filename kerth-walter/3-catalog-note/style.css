@@ -1,0 +1,46 @@
+body {
+				margin: 0px;
+				background-color: #acfe2f; 	
+			}
+			.body1 {
+				background: linear-gradient(to right, #acfe2f 0px,#acfe2f 683px,#add8e5 683px,#add8e5 1366px);
+			}
+			.numeElev {
+				padding: 0px;
+				margin: 10px;
+			}
+			#lista_elevi_wrapper{
+				background-color: #acfe2f;
+			}
+			#note_elevi_wrapper{
+				background-color: #add8e5;
+			}
+			.link{
+				background-color: #4CAF50;
+				color: white;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+			.tabel{
+				width: 1300px;
+				text-align: center;
+			}
+			.tabel1{
+				width: 650px;
+				text-align: center;
+			}
+			.tabel2{
+				width: 650px;
+				text-align: left;
+			}
+			td {
+				width: 100px;
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: 1366px;
+			}
+			.grid1 {
+				display: grid;
+				grid-template-columns: 683px 683px;
+			}
