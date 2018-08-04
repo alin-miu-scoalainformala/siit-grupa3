@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalii Produs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Nobile|PT+Sans|Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onload="getModifyDetails()">
+    <header onclick="window.location.href='admin.html'">
+        <button type="button" id="back-button" onclick="window.location.href='admin.html'">
+            <i class="fas fa-arrow-alt-circle-left"></i>
+        </button>
+        <h2>Restaurant</h2>
+        <h1>Casa Informală</h1>
+    </header>
+    <div id="main-wrapper">
+        <form id="modify-form">
+            <label for="recipe-name">Denumire preparat: <span class="error error-name">O denumire este necesară!</span></label>
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="adaugați denumirea...">
+
+            <label for="recipe-URL-image">URL fotografie produs: <span class="error error-url">O fotografie este necesară!</span></label>
+            <input type="text" id="recipe-URL-image" name="recipe-URL-image" placeholder="adăugați URL fotografie produs...">
+
+            <label for="recipe-ingredients">Ingrediente: <span class="error error-ingredients">Vă rugăm adăugați ingredientele!</span></label>
+            <input type="text" id="recipe-ingredients" name="recipe-ingredients" placeholder="adăugați ingredientele...">
+
+            <label for="recipe-description">Mod de preparare:</label>
+            <textarea type="text" id="recipe-description" name="recipe-description" placeholder="descrieți modul de preparare..."></textarea>
+
+            <input type="submit" id="add-new" class="submit" value="Modifică rețetă">
+        </form>
+
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+    <script src="../js/easyHTTP.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>
