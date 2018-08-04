@@ -1,7 +1,210 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+  background-color: #d0bcfe;
+}
 
+
+ {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 5;
+  padding: 5;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+ 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.header {
+  background-color:#d0bcfe ;
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  border: 15;
+  border color:#afcbfa;
+  width: 65%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #72fe95;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+.button-sort{
+    background:#E29BFD;
+	border-radius: 5px;
+	font-size: 15px;
+}
+</style>
+</head>
 <body>
-    TODO: implementare shopping list
-</body>
 
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">SHOPPING LIST</h2>
+  <input type="text" id="myInput" placeholder="Articol...">
+  <span onclick="newElement()" class="addBtn">Add Item</span>
+</div>
+
+<button class="button button-sort" onclick="SortAsc()">Sort asc</button>
+<button class="button button-sort" onclick="SortDesc()">Sort desc</button>
+<p id="sort"></p>
+		
+<ul id="myUL">
+  <li>Lapte</li>
+  <li>Cereale</li>
+  <li>Avocado</li>
+  <li>Dulciuri</li>
+  <li>Paine</li>
+  <li>Ciocolata</li>
+  <li>Apa</li>
+  <li>Suc de portocale</li>
+</ul>
+
+<script>
+var shoppingList = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < shoppingList.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  shoppingList[i].appendChild(span);
+}
+
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+var shoppingList = [];
+document.getElementById("sort").innerHTML = shoppingList;
+function SortAsc() {
+    shoppingList.sort();
+    document.getElementById("sort").innerHTML = shoppingList;
+}
+function SortDesc() {
+    shoppingList.sort();
+    shoppingList.reverse();
+    document.getElementById("sort").innerHTML = shoppingList;
+}
+</script>
+
+</body>
 </html>
