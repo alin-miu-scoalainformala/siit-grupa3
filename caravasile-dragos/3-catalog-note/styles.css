@@ -1,0 +1,25 @@
+#elevi_wrapper {
+    background-color: green;
+}
+#noteeleviwrap {
+    background-color: lightblue;
+    display: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+
+#adaugarenotewrap {
+    width: 100%;
+    height: 100%;
+    background: greenyellow;
+}
+    
+
+table {
+    width: 100%;
+    text-align: center;
+}

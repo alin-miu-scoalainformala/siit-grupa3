@@ -1,0 +1,32 @@
+.menu{
+    width: 372px;
+    height: 300px;
+    
+    border-radius: 50px;
+    
+}
+.elem{
+ display: inline;
+ float: left;
+ margin-top: 50px;
+}
+.card{
+    width: 372px;
+    height: 414px;
+    margin-left: 65px
+}
+.dspan{
+    float: right;
+    position: initial
+}
+.ingredient{
+    display: block;
+    color: aliceblue;
+    text-align: center
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}

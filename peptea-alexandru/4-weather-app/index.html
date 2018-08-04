@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tema Vremea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="vremea.css" />
+    <script src="vremea.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUDYuJRoWoskqjmuho9fx8pHoD9h5JZOY"></script>
+</head>
+<body>
+
+    <div id="container">
+        
+        <div id="header">
+
+            <input type="text" id="localitate" placeholder="ex:Bucuresti">
+            &nbsp; &nbsp;
+            <input type="button" class="buton" value="Afiseaza vremea" onClick="afiseazaVremea();">
+            &nbsp;
+            <input type="button" class="buton" value="Afiseaza prognoza" onClick="afiseazaPrognoza();">
+
+        </div>
+
+       
+        <div id="main">
+        	<div id="vremeaAcum">
+        		<h3>Vremea acum</h3>
+			</div>
+       		
+       		 <div id="continutStanga">
+       		 	<p> <img id="iconita" src="" /> </p>
+				 <p>Descriere: <span id="descriere"></span> </p> 
+				 <p>Umiditate: <span id="umiditate"></span></p> 
+				 <p>Presiune:  <span id="presiune"></span></p> 
+				 <p>Temperatura curenta: <span id="temperaturaCurenta"></span></p> 
+				 <p>Minima zilei: <span id="minimaZilei"></span></p> 
+				 <p>Maxima zilei: <span id="maximaZilei"></span></p> 
+				 
+
+       		</div>
+       		
+       		<div id="continutDreapta">
+       			
+       		</div>
+        </div>
+
+       
+       
+        <div id="footer">
+			<div id="vremeaUrmatoareleZile">
+				<h2>Vremea in urmatoarele zile</h2>
+				
+			</div>
+        </div>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

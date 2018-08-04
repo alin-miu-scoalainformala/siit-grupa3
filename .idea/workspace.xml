@@ -2,40 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef90624-f2af-4418-b553-d7784d201c65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/images/kfc_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/assets/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/assets/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/boiler-template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/boiler-template/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/boiler-template/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs11-30-05-August/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs11-30-05-August/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs11-30-05-August/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/bubbleSort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/tema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/test-curs-7/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/test-curs-7/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs9-16-22-July/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vasilachi-razvan/cursuri/curs9-16-22-July/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -154,12 +120,6 @@
               <item name="siit-grupa3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vasilachi-razvan" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="siit-grupa3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="siit-grupa3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vasilachi-razvan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="1-agenda-telefonica" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -212,7 +172,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40675000" />
+    <option name="totallyTimeSpent" value="41179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -577,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>

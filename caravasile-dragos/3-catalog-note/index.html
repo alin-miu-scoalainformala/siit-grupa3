@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div id="lista_elevi_wrap">
+        <h1>Lista Elevi</h1>
+        <div id="adaugaelev">
+            <input type="text" id="numeelev" />
+            <button onclick="adElev(); afisareElevi();" id="butAdaugElev">
+                Adaugare elev
+            </button>
+        </div>
+        <div id="lista_elevi">
+        </div>
+
+    </div>
+
+
+    <div id="noteeleviwrap">
+        <button id="butAscundeNote" onclick="ascundenota();"> Ascunde notele
+
+        </button>
+
+        <div>Nume Elev
+            <p id="pnume_elev"></p>
+        </div>
+
+        <div id="adaugarenotewrap">
+            <input type="number" id="notaelev" />
+            <button id="butAdaugNota" onclick="adaugareNota(); afisareNote(); medie[indexElev]=medieNoteElev(); afisareElevi();">Adauga nota </button>
+        </div>
+
+        <div id="listanote">
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

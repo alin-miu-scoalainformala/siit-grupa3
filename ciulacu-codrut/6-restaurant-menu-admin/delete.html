@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Meniu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="populateDelete(getUrlVars()['id'])">
+        <div class="header">
+            <h3>Califoodication</h3>
+        </div>
+        <div class="main">
+            <h3>Esti pe cale sa stergi reteta: <span id="nume"></span></h3>
+            <h3>Esti de acord?</h3><br/>
+            <input type="submit" onclick="deleteItem(getUrlVars()['id']);" class="btn btn-lg btn-primary">
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,285 @@
+:root {
+    --mushroom: #fef2e4;
+    --onion: #fd974f;
+    --redPepper: #c60000;
+    --driftwood: #805a3b; 
+}
+body {
+    font-family: 'Exo', sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.main-wrapper {
+    display: flex;
+}
+.wrapper {
+    flex: 0 0 90%;
+    background-color: var(--mushroom);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px var(--driftwood);
+    -webkit-transition: flex 0.9s ease-in-out;
+    transition: flex 0.9s ease-in-out;
+}
+.secondary-wrapper {
+    position: relative;
+    background-color: var(--onion);
+    box-shadow: inset 2px 2px 10px var(--driftwood);
+    padding: 25px;
+    flex: 0 0 30%;
+    border-radius: 25px;
+    right: -100%;
+    -webkit-transition: right 0.7s ease-in-out;
+    transition: right 0.4s ease-in-out;
+}
+.error {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: var(--redPepper);
+    font-size: 1.3rem;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+header {
+    background-color: var(--onion);
+    padding: 15px;
+    position: relative;
+    top: -15px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 10px var(--driftwood);
+}
+header h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 5rem;
+    color: var(--mushroom);
+    text-shadow: 2px 2px 5px var(--driftwood);
+    margin: 0 20px;
+}
+.add-student {
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+.add-student #name {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding-left: 12px;
+}
+.add-grade #grade {
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 0 7px;
+}
+input::placeholder {
+    font-family: 'Exo', sans-serif;
+    color: var(--onion);
+}
+#add-student {
+    font-family: 'Exo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin-left: 20px;
+    height: 45px;
+    width: 200px;
+    background-color: var(--redPepper);
+    color: var(--mushroom);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--driftwood);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+#add-student:hover {
+    box-shadow: 2px 2px 10px var(--driftwood);
+}
+#add-student:active {
+    box-shadow: none;
+}
+#add-grade {
+    font-family: 'Exo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: 30px;
+    width: 130px;
+    margin-bottom: 5px;
+    background-color: var(--redPepper);
+    color: var(--mushroom);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px var(--driftwood);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+#add-grade:hover {
+    box-shadow: 2px 2px 7px var(--driftwood);
+}
+#add-grade:active {
+    box-shadow: none;
+}
+.sort {
+    font-family: 'Exo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin-right: 20px;
+    height: 35px;
+    width: 255px;
+    background-color: var(--onion);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px var(--driftwood);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.sort:hover {
+    box-shadow: 2px 2px 10px var(--driftwood);
+}
+.sort:active {
+    box-shadow: none;
+}
+.sort-grade {
+    font-family: 'Exo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin: 0px;
+    height: 25px;
+    width: 148px;
+    background-color: var(--mushroom);
+    color: var(--driftwood);
+    font-size: 0.8rem;
+    font-weight: 100;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--driftwood);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.sort-grade:hover {
+    box-shadow: 2px 2px 7px var(--driftwood);
+}
+.sort-grade:active {
+    box-shadow: none;
+}
+.hide {
+    font-family: 'Exo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: var(--mushroom);
+    color: var(--driftwood);
+    font-size: 0.9rem;
+    font-weight: 100;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px var(--driftwood);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.hide:hover {
+    box-shadow: 2px 2px 10px var(--driftwood);
+}
+.hide:active {
+    box-shadow: none;
+}
+table {
+    table-layout: fixed;
+}
+.student-list {
+    margin-top: 30px;
+    width: 100%;
+}
+.student-list th {
+    height: 40px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--redPepper);
+}
+.student-list td {
+    height: 40px;
+    font-size: 1.4rem;   
+}
+.student-list .average {
+    text-align: center;
+}
+.student-list .arata-note {
+    appearance: none;
+    border: none;
+    height: 35px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: var(--mushroom);
+    color: var(--driftwood);
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    -webkit-transition: background-color 0.3s, color 0.5s;
+    transition: background-color 0.3s, color 0.5s;
+}
+.student-list .arata-note:hover {
+    background-color: var(--driftwood);
+    color: var(--mushroom);
+    cursor: zoom-in;
+}
+.student-grade-list {
+    margin-top: 30px;
+    width: 50%;
+    margin: 20px auto;
+}
+.student-grade-list th {
+    height: 40px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--redPepper);
+}
+.student-grade-list td {
+    text-align: center;
+    height: 40px;
+    font-size: 1.5rem;   
+}
+.grade-title {
+    color: var(--mushroom);
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.student-name {
+    color: var(--redPepper);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+footer {
+    color: var(--redPepper);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+footer a {
+    text-decoration: none;
+    color: var(--driftwood);
+    -webkit-transition: text-shadow 0.3s, color 0.5s;
+    transition: text-shadow 0.3s, color 0.5s;
+}
+footer a:hover {
+    cursor: crosshair;
+    text-shadow: 0px 1px 1px var(--driftwood);
+}

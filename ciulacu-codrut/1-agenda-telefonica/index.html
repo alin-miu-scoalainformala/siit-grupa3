@@ -1,0 +1,157 @@
+<html>
+
+    <head>
+        <title>Agenda</title>
+        <style>
+            body {
+                font-family: Verdana;
+                background-color: antiquewhite;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .form-box {
+                background-color: orange;
+                margin: 0.75% 30%;
+                padding: 2% 5%;
+                border-radius: 5px;
+            }
+
+            .form-box input[type="submit"] {
+                margin-top: 2%;
+                padding: 2%;
+                border-width: 0;
+                border-radius: 5px;
+                background-color: navy;
+                color: white;
+            }
+
+            .form-box input[type="text"]{
+                border-width: 0;
+                border-radius: 2px;
+            }
+
+            .form-box input[type="number"]{
+                border-width: 0;
+                border-radius: 2px;
+            }
+        </style>
+
+        <script>
+            var userList = [
+            ];
+            var update = false;
+            var modifIndex;
+            
+            function display(list){
+                list = userList;
+                let body = document.querySelector('#tab table tbody');
+
+                var generatedBody = "";
+                for (let i = 0; i < list.length; i++) {
+                    generatedBody +=
+                        `<tr>
+                            <td>${list[i].name}</td>
+                            <td>${list[i].phone}</td>
+                            <td><a href="#" onclick="modifItem(${i})">Modifica</a></td>
+                            <td><a href="#" onclick="removeItem(${i});">Sterge</a></td>
+                        </tr>`;
+                }
+
+                body.innerHTML = generatedBody;
+            }
+
+            function addItem(){
+                let nume = document.getElementById('nume');
+                let telefon = document.getElementById('telefon');
+                
+                if(nume.value !== "" && telefon.value !== ""){
+                    userList.push({name: nume.value, phone: telefon.value});
+                    nume.value = "";
+                    telefon.value = "";
+                    display(userList);
+                }
+            }
+            
+            function removeItem(index){
+                userList.splice(index, 1);
+                display(userList);
+            }
+
+            function modifItem(index){
+                let nume; let telefon;
+                
+                nume = document.getElementById('nume');
+                telefon = document.getElementById('telefon');
+
+                nume.value = userList[index].name;
+                telefon.value = userList[index].phone;
+                
+                update = true;
+                modifIndex = index;
+            }
+            
+            function addModifItem(index){
+                let nume; let telefon;
+
+                nume = document.getElementById('nume');
+                telefon = document.getElementById('telefon');
+
+                userList[index].name = nume.value;
+                userList[index].phone = telefon.value;
+
+                nume.value = "";
+                telefon.value = "";
+
+                display(userList);
+
+                update = false;
+            }
+
+            function actionChooser(index){
+                if(update)
+                    addModifItem(index);
+                else
+                    addItem();
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1>
+            <center>
+                <strong>Agenda</strong>
+            </center>
+        </h1>
+        <div class="form-box">
+            <label>Nume: </label>
+            <input type="text" id="nume" autocomplete="off"/>
+            <label>Telefon: </label>
+            <input type="number" id="telefon" />
+            <br/>
+            <center>
+                <input type="submit" id="submit-btn" value="ADAUGA CONTACT" onclick="actionChooser(modifIndex);" />
+            </center>
+        </div>
+
+        <div class="form-box" id="tab">
+            <table cellpadding="10">
+                <thead>
+                    <th>
+                        <strong>Nume</strong>
+                    </th>
+                    <th>
+                        <strong>Telefon</strong>
+                    </th>
+                </thead>
+                <tbody id="tb">
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Casa Informală</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Nobile|PT+Sans|Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header onclick="window.location.href='index.html'">
+        <button type="button" id="back-button" onclick="window.location.href='admin.html'">
+            <i class="fas fa-arrow-alt-circle-left"></i>
+        </button>
+        <h2>Restaurant</h2>
+        <h1>Casa Informală</h1>
+    </header>
+    <div id="main-wrapper">
+        <div id="title">
+            <h1>Login</h1>
+        </div>
+        <div id="line"></div>
+
+        <form id="login-form">
+            <label for="user-name">Introduceți numele de utilizator:  <span class="error error-user">necesar!</span></label>
+            
+            <input type="text" id="user-name" name="user-name" placeholder="nume utilizator...">
+
+            <label for="password">Introduceți parola:  <span class="error error-pass">necesar!</span></label>
+            <input type="password" id="password" name="password" placeholder="parola...">
+
+            <label class="error error-incorrect">Numele de utilizator sau parolă greșită!</label>
+            <input type="submit" id="login" class="submit" value="Login">
+        </form>
+
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+    <script src="js/easyHTTP.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

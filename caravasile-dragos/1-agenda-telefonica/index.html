@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<script src="javascript.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<title>Agenda</title>
+</head>
+
+<body>
+<div class="continut">
+        <h2><center>Agenda</center></h2>
+
+        <div id="wrap1" class="box">
+            <label type="text">Nume</label> 
+            <input type="text" id="nume"> </input>
+          
+            <label type="text">Telefon </label>
+            <input type="number" id="telefon"> </input>
+            <br>
+            <input type="button" id="sbmt" value="Adauga contact" onclick="telefonare()"/>  
+
+        </div>
+    
+
+
+    <div id="wrap2" class="box">
+            <div id="lista" class="box">
+    <table id ="tabel1">
+            <thead>
+            <tr>
+                <td>Nume</td>
+                <td>Telefon</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    </div>
+    </div>
+</div>
+           
+<script>
+        var input = document.getElementById("telefon");
+        input.addEventListener("keyup", function() {
+        if (event.keyCode === 13) {
+        document.getElementById("sbmt").click();
+    }
+});    
+</script>
+</body>
+
+</html>

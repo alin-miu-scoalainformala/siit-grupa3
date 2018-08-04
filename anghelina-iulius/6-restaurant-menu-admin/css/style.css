@@ -1,0 +1,398 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+:root {
+   --mainHover: #f77604; 
+   --bkgTrsp: #ffffffab;
+   --mainColor: rgba(224, 138, 8, 0.705);
+   --mainColorShadow: rgb(139, 86, 5);
+   --darkOne: #231b12c4;
+}
+body {
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+/* header */
+header {
+    position: fixed;
+    background-color: var(--mainHover);
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 2px 5px 30px var(--mainColorShadow);
+    z-index: 9;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+header h1 {
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 3.5rem;
+    text-align: right;
+    text-shadow: 1px 1px 10px var(--darkOne);
+    color: white;
+    position: relative;
+    width: 490px;
+    top: -43px;
+    margin: 0 auto;
+}
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--darkOne);
+    position: relative;
+    top: 1.6px;
+    width: 485px;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--darkOne);
+}
+
+/* main content wrapper */
+#main-wrapper {
+    width: 70%;
+    margin: 100px auto 0 auto;
+    background-color: var(--bkgTrsp);
+    padding: 10px 50px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 80px var(--mainColorShadow);
+}
+/* All buttons */
+#main-wrapper button {
+    border: 0;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#main-wrapper button:active {
+    box-shadow: none;
+}
+#contact button, 
+#admin button, 
+#details-contact button {
+    position: relative;
+    float: right;
+    height: 60px;
+    width: 150px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--mainColor);
+    z-index: 2;
+    transform: scale(0.98);
+}
+#contact button, 
+#admin button {
+    margin-top: -100px;
+}
+#details-contact button {
+    margin-top: 37px;
+}
+#contact button {
+    right: 151px;
+}
+header #back-button {
+    position: fixed;
+    float: left;
+    left: 15%;
+    top: 10px;
+    margin: 0;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    color: var(--mainHover);
+    font-size: 2.2rem;
+    border-radius: 5px;
+    background-color: var(--bkgTrsp);
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+header #back-button:hover {
+    box-shadow: 2px 2px 15px var(--mainColorShadow);
+    background-color: white;
+}
+#add-new button {
+    height: 60px;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--mainColor);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+#create-new .submit, 
+#modify-form .submit,
+#login-form .submit {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    color: white;
+    font-size: 1.4rem;
+    background-color: var(--mainColor);
+    transform: scale(0.98);
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#login-form .submit {
+    width: 103%;
+
+}
+.buttons.container {
+    width: 390px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#delete,
+#modify,
+#confirm-no,
+#confirm-yes {
+    color: white;
+    font-size: 1.3rem;
+    width: 157px;
+    height: 50px;
+    position: relative;
+    transform: scale(0.97);
+}
+#modify, #confirm-no {
+    background-color: green;
+}
+#delete, #confirm-yes {
+    background-color: red;
+}
+#delete:hover,
+#modify:hover,
+#confirm-no:hover,
+#confirm-yes:hover {
+    transform: scale(1);
+    box-shadow: 2px 2px 5px var(--mainColorShadow);
+    cursor: pointer;
+}
+#contact button:hover, 
+#admin button:hover,
+#add-new button:hover,
+#create-new .submit:hover,
+#modify-form .submit:hover,
+#login-form .submit:hover,
+#back-button:hover,
+#details-contact button:hover {
+    box-shadow: 2px 2px 10px var(--mainColorShadow);
+    background-color: var(--mainHover);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+/* lines */
+#line, #details-line, #contact-line {
+    border-bottom: 5px solid var(--mainHover);
+    position: relative;
+    top: -32px;
+    margin: 0 0 0 auto;
+    z-index: 0;
+}
+#line {
+    width: 91%;
+}
+#contact-line {
+    width: 95%;
+}
+#details-line {
+    width: 98%;
+}
+/* details page */
+#title h1, #contact h1 {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    color: var(--mainHover);
+    margin: 10px;
+    text-shadow: 3px 3px 15px white;
+    z-index: 1;
+}
+#details h2 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.8rem;
+    margin: 20px 0;
+    color: var(--mainHover);
+    text-shadow: 3px 3px 15px white;
+}
+#details img {
+    width: 500px;
+    position: relative;
+    float: right;
+    margin: -20px 0 20px 20px;
+    border: 5px solid var(--mainColor);
+    border-radius: 35px;
+    box-shadow: 2px 2px 15px var(--darkOne);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#details p {
+    font-size: 1.5rem;
+}
+
+/* generated menu items */
+.menu-item {
+    background-color: var(--mainColor);
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 3px var(--darkOne); 
+    color: white;
+    min-height: 210px;
+    font-size: 1.3rem; 
+    transform: scale(0.99);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.menu-item.clickable {
+    cursor: pointer;
+}
+.menu-item.clickable:hover {
+    background-color: var(--mainHover);
+    box-shadow: 4px 4px 20px var(--darkOne);
+    transform: scale(1);
+}
+.menu-item img {
+    width: 250px;
+    position: relative;
+    margin-left: 25px;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px var(--darkOne);
+}
+.menu-item h2 {
+    color: var(--darkOne);
+    border-bottom: 2px solid var(--darkOne);
+    font-size: 2.3rem;
+    margin: 0;
+}
+#delete-page h1 {
+    text-align: center;
+}
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px; 
+    box-shadow: 2px 2px 15px var(--darkOne);
+}
+/* input forms */
+.filter input::placeholder {
+    color: var(--mainHover);
+}
+input[type=text], 
+input[type=password], 
+textarea {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid var(--mainColor);
+    border-radius: 4px;
+    resize: none;
+    font-size: 1.3rem;
+}
+textarea {
+    height: 200px;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+#loader img {
+    width: 250px;
+    margin: 60px auto;
+    display: block;
+}
+#main-wrapper #login-form {
+    width: 40%;
+    margin: 40px auto;
+}
+
+/* input errors text */
+.error {
+    color: red;
+    display: none;
+}
+
+/* Footer */
+footer {
+    color: var(--darkOne);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+footer a {
+    text-decoration: none;
+    color: var(--mainHover);
+    -webkit-transition: all 0.3s, color 0.5s;
+    transition: all 0.3s, color 0.5s;
+}
+footer a:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 3px white;
+}
+
+@media only screen and (max-width: 1300px) {
+    #main-wrapper {
+        width: 90%;
+    }
+    header #back-button {
+        left: 2%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #main-wrapper {
+        width: 80%;
+    }
+    .menu-item img {
+        width: 200px;
+    }
+    #title h1, #contact h1 {
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .menu-item img {
+        width: 150px;
+    }
+    #title h1, #contact h1 {
+        font-size: 6rem;
+    }
+    #contact button, 
+    #admin button, 
+    #details-contact button {
+        float: unset;
+        width: 100%;
+        margin: 0 0 15px 0;
+        left: 0;
+    }
+    header   {
+        height: 55px;
+    }
+    header h1 {
+        top: -30px;
+        font-size: 2.8rem;
+        width: 370px;
+    }
+    header h2 {
+        top: 5px;
+        font-size: 1.3rem;
+        width: 370px;
+    }
+    header #back-button {
+        top: 2px;
+    }
+}

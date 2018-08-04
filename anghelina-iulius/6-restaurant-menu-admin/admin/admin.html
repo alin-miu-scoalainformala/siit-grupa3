@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrare Meniu</title>
+    <link href="https://fonts.googleapis.com/css?family=Allura|Nobile|PT+Sans|Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onload="getMenu()">
+    <header onclick="window.location.href='admin.html'">
+        <h2>Restaurant</h2>
+        <h1>Casa Informală</h1>
+    </header>
+    <div id="main-wrapper">
+        <div id="title">
+            <h1>Admin</h1>
+        </div>
+        <div id="line"></div>
+
+        <div id="admin">
+            <button type="button" onclick="window.location.href='../index.html'">Log Out</button>
+        </div>
+
+        <div id="add-new">
+            <button type="button" onclick="window.location.href='new.html'">Adaugă rețetă nouă</button>
+        </div>
+
+        <div id="main-menu">
+        </div>
+    </div>
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+    <script src="../js/easyHTTP.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

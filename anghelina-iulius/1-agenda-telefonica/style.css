@@ -1,0 +1,163 @@
+html {
+    font-family: 'Molengo', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #22B24B;
+}
+.wrapper {
+    width: 1024px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url('wrapper.png');
+    border-radius: 6px;
+    box-shadow: 2px 2px 14px rgb(66, 66, 66);
+}
+header {
+    text-align: center;
+    margin: 30px;
+}
+header h1 {
+    font-family: 'Leckerli One', cursive;
+    font-size: 4rem;
+    margin: 0px;
+    color: brown;
+    text-shadow: 2px 2px 5px white;
+}
+header h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.7rem;
+    text-transform: uppercase; 
+    margin-top: -20px;
+    margin-bottom: 90px;
+    color: gray;
+    text-shadow: 2px 2px 5px white;
+}
+.main-input {
+    -webkit-transition: box-shadow 0.4s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
+    box-shadow: 1px 1px 7px rgb(105, 105, 105);
+}
+.main-input:hover {
+    box-shadow: 1px 1px 20px grey;
+}
+.main-input, .contacts {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+.main-input label {
+    font-size: 1.4rem;
+}
+.main-input .input {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1rem;
+}
+.main-input .button, .contacts .clearbutton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Molengo', sans-serif;
+    display: block;
+    margin: 20px auto 0px auto;
+    background-color: firebrick;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.main-input .button:hover, .contacts .clearbutton:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+.main-input .button:active, .contacts .clearbutton:active {
+    background-color: rgb(158, 28, 28);
+    box-shadow: none;
+}
+.forget {
+    text-align: left;
+    margin-left: 68px;
+    font-size: 1.4rem;
+    color: gray;
+}
+.contacts {
+    opacity: 0;
+    -webkit-transition: opacity 0.9s ease-in;
+    transition: opacity 0.9s ease-in;
+}
+.thead {
+    display: none;
+}
+.contacts .clearbutton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+.contacts table {
+    margin: auto;
+    width: 80%;
+    table-layout: fixed;
+}
+.contacts th {
+    height: 40px;
+    font-size: 1.4rem;
+    color: firebrick;
+    border-bottom: 1px solid firebrick;
+}
+.contacts td {
+    height: 40px;
+    font-size: 1.3rem;
+}
+.contacts .clickable {
+    color: firebrick;
+    border-radius: 5px;
+    padding:3px;
+    -webkit-transition: background-color 0.3s, color 0.5s;
+    transition: background-color 0.3s, color 0.5s;
+}
+.contacts .modify {
+    color: #22B24B;
+}
+.delete {
+    display: table-cell;
+}
+.contacts .modify:hover {
+    background-color: #22B24B;
+    color: white;
+    cursor: pointer;
+}
+.contacts .delete:hover {
+    background-color: firebrick;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #22B24B;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: inset 2px 2px 14px rgb(66, 66, 66);
+}
+footer a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+footer a:hover {
+    text-decoration: underline;
+}

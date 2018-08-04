@@ -1,0 +1,82 @@
+#formwrapper {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#vremeawrapper {
+    padding: 13px;
+    background: white;    
+    border-radius: 5px;
+    margin-top: 13px;
+}
+.continut{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+#vremea {
+    float: left;
+    width: 30%;
+    margin-top: 2013px;
+}
+#map {
+    float: right;
+}
+#prognozawrapper {
+    padding: 13px;
+    float: left;
+    margin-top: 13px;
+    background: white;    
+    border-radius: 5px;
+}
+#prognoza{
+    display: inline-flex;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+
+li img{
+    margin-top: 20px; 
+}
+
+#prognozawrapper div {
+    text-align: center;
+}
+ 
+.div-day{
+    margin-top: 20px;
+}
+.div-day span {
+        background: rgb(151, 188, 218);
+        padding: 5px;
+}
+html{
+    background: #a2bed3;
+    padding: 20px;
+}
+
+body {
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+#asezare {
+    width:70%;
+    height:200px;
+}

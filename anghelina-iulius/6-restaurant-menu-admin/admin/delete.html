@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stergere Produs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Nobile|PT+Sans|Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onload="getMenu()">
+    <header onclick="window.location.href='admin.html'">
+
+        <button type="button" id="back-button" onclick="window.location.href='admin.html'">
+            <i class="fas fa-arrow-alt-circle-left"></i>
+        </button>
+        <h2>Restaurant</h2>
+        <h1>Casa Informală</h1>
+
+    </header>
+
+    <div id="main-wrapper">
+
+        <div id="contact">
+            <h1>Stergere</h1>
+            <div id="contact-line"></div>
+        </div>
+
+        <div id="delete-page">
+            <h1>Ești sigur?</h1>
+            <div class="buttons container">
+                <button type="button" id="confirm-yes" onclick="deleteEntry()">DA</button>
+                <button type="button" id="confirm-no" onclick="window.location.href='admin.html'">NU</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018:
+            <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+    <script src="../js/easyHTTP.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

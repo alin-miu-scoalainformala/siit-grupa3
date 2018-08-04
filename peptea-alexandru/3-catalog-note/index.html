@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agenda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="catalog.css" />
+    <script src="catalog.js"> </script>
+    
+    
+</head>
+
+<body>
+	<div id="container">
+		
+	
+		<div id="header">
+			<h1>Lista elevi</h1>
+		</div>
+
+		<div id="datele">
+			Nume:&nbsp; &nbsp;<input type="text" id="nume" name="nume" placeholder="ex: Ionel">
+			<input type="button" id="buton" value="Adauga elev" onClick="adaugareElev();">
+		</div>
+		
+		<div id="main">
+			<a href="#">Sorteaza <strong><span style="color: aqua">ascendent</span></strong> dupa medie note</a> <br>
+			<a href="#">Sorteaza <strong><span style="color: #DF060A">descendent</span></strong> dupa medie note</a>
+			
+				<table id="tabel">
+
+				<thead>
+					<th>Nume</th>
+					<th>Medie note</th>
+
+
+				</thead>
+
+				<tbody>
+
+				</tbody>
+
+			</table>
+		</div>
+	
+	</div>
+	
+	<div id="container2">
+		
+		<input type="button" id="ascNote" value="Ascunde notele" onClick="ascundeNotele()">
+		
+		<div id="header1">
+			<h1>Note elev:<span id="elevSpan"></span></h1>
+		</div>
+
+		<div id="datele1">
+			Nota:&nbsp; &nbsp;<input type="number" id="nota" name="nota" placeholder="ex: 8">
+			<input type="button" id="buton1" value="Adauga nota" onClick="adaugareNota()">
+		</div>
+		
+		<div id="main1">
+			<a href="#">Sorteaza <span style="color: aqua">ascendent</span> notele</a> <br>
+			<a href="#">Sorteaza <strong><span style="color: #DF060A">descendent</span></strong> notele</a>
+			
+				<table id="tabel1">
+
+				<thead>
+					<th>Nota</th>
+					
+
+
+				</thead>
+
+				<tbody id="tbody1">
+
+				</tbody>
+
+			</table>
+		</div>
+	
+	</div>
+	
+	
+
+</body>
+</html>

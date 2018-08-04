@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Never-gone || Phone Book</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Leckerli+One|Molengo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getPhoneBookEntries(); displayContacts(phoneBook)">
+<div class="wrapper">
+    <header>
+        <h1>Close-it-and-it's-never-gone</h1>
+        <h2>Phone Book</h2>
+    </header>
+    <form class="main-input">
+        <p class="forget">Feel free to add anyone you want to remember:</p>
+        <label for="nume">Name: </label><input type="text" id="nume" class="input" placeholder='George'>
+        <label for="number">Phone: </label><input type="number" id="number" class="input" placeholder='0740 123 456' onload="pressEnter(e)">
+        <input type="button" class="button" name="submit" value="Add Contact" onclick="addContact(phoneBook)">
+    </form>
+    
+    <div class="contacts">
+        <table>
+            <thead class="thead">
+                <th>Name</th>
+                <th>Phone</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input type="button" class="button clearbutton" name="submit" value="Clear All" onclick="clearAll();">
+    </div>
+    <footer>    
+        <div>Homework assignment, The Informal School of IT</div>
+        <div>© 2018: <a href="http://juliusanghelina.ro" target="_blank"> JuliusAnghelina.ro</a></div>
+    </footer>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

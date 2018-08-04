@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tema DOM | Shopping List</title>
+    <link rel="stylesheet" type="text/css" href="temaDOMshopping.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <script src="temaDOMshopping.js"></script>
+</head>
+<body>
+    <div id="shoppingList">
+        <h1>SHOPPING LIST</h1>
+        <div id="inputArea">
+            <input type="text" placeholder="insert item">
+            <button id="addButton" onclick="displayTable();">Add item</button>
+        </div>
+        <div id="sortButtonsArea">
+            <button class="sortButtons" onclick="sortAsc()">Sort ↧</button>
+            <button class="sortButtons" onclick="sortDsc()">Sort ↥</button>
+        </div>
+        <table>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
