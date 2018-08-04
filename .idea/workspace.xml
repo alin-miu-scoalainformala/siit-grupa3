@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef90624-f2af-4418-b553-d7784d201c65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,18 +12,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="razvan.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/razvan.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>drawTable</find>
+      <find>sort</find>
+      <find>average</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>drawStudentsTable</replace>
+      <replace>marks</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,11 +53,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/razvan.html" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/main.css" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/scripts.js" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/main.css" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/index.html" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/scripts.js" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/boiler-template/index.html" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/boiler-template/main.css" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/boiler-template/scripts.js" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/main.css" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/index.html" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/scripts.js" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/main.css" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/scripts.js" />
+        <option value="$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/index.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -45,7 +88,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
@@ -64,6 +107,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,15 +115,34 @@
               <item name="siit-grupa3" type="b2602c69:ProjectViewProjectNode" />
               <item name="siit-grupa3" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="siit-grupa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="siit-grupa3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vasilachi-razvan" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\siit-grupa3\vasilachi-razvan\assets" />
+      <recent name="C:\siit-grupa3\vasilachi-razvan\6-restaurant-menu-admin" />
+      <recent name="C:\siit-grupa3\vasilachi-razvan\3-catalog-note" />
+      <recent name="C:\siit-grupa3\vasilachi-razvan\boiler-template" />
+      <recent name="C:\siit-grupa3\vasilachi-razvan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\siit-grupa3\vasilachi-razvan\6-restaurant-menu-admin\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,32 +167,44 @@
       <option name="presentableId" value="Default" />
       <updated>1529131230040</updated>
       <workItem from="1529131231319" duration="683000" />
+      <workItem from="1532854998110" duration="27821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="683000" />
+    <option name="totallyTimeSpent" value="41179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30332828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30332828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,10 +218,327 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/5-restaurant-menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/razvan.html" />
+    <entry file="file://$PROJECT_DIR$/razvan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/razvan.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/bubbleSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/tema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/razvan.html" />
+    <entry file="file://$PROJECT_DIR$/razvan.html" />
+    <entry file="file://$PROJECT_DIR$/razvan.html" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/razvan.html" />
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/bubbleSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/assets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/tema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs4-11-17-June/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/boiler-template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/boiler-template/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/boiler-template/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/2-shopping-list/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/3-catalog-note/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/test-curs-7/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/index.html" />
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs8-9-15-July/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/cursuri/curs7-02-08-July/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/assets/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/6-restaurant-menu-admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="106" column="35" lean-forward="false" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vasilachi-razvan/1-agenda-telefonica/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
