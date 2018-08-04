@@ -1,7 +1,108 @@
+<!DOCTYPE html>
 <html>
-
-<body>
-    <a href="https://github.com/WalterKerth/siit/blob/master/Tema%20Agenda%20Telefonica.html">1-agenda-telefonica</a>
+	<head>
+		<style>
+			body {
+				background-color: #FFF8E1;
+			}
+			h1 {
+				text-align: center;
+			}	
+			input {
+				padding: 5px;
+				border-radius: 5px;
+				border: none;
+				margin: 5px;
+			}
+			.btn {
+				background-color: #3F51B5;
+				border-radius: 5px;
+				border: none;
+				padding: 10px;
+				color: white;
+				margin: 5px;
+				text-transform: uppercase;
+				cursor: pointer;
+			}
+			table {
+    			width: 100%;
+			}
+			table td {
+    			text-align: center;
+			}
+		</style>
+		<script>
+			var listaClienti=[];
+			var indexModificat=-1;
+		function adaugaClient(form, event){
+			event.preventDefault();
+			if(indexModificat!==-1){
+				listaClienti[indexModificat]={
+					nume: form.querySelector("[name=nume]").value,
+					telefon: form.querySelector("[name=telefon]").value,
+				};
+				indexModificat=-1;
+			}else{
+				listaClienti.push({
+					nume: form.querySelector("[name=nume]").value,
+					telefon: form.querySelector("[name=telefon]").value,
+				});
+			}
+			drawClienti();
+		}
+		function sterge(index){
+			listaClienti.splice(index,1);
+			drawClienti();
+		}
+		function modifica(index){
+			var client = listaClienti[index];
+			document.querySelector("form [name=nume]").value=client.nume;
+			document.querySelector("form [name=telefon]").value=client.telefon;
+			indexModificat=index;
+		}
+		function drawClienti(){
+			var tabel=document.querySelector("#listaClienti tbody");
+			var str="";
+			for(var i=0;i<listaClienti.length;i++){
+				
+				var rand = `<tr>
+					<td>${listaClienti[i].nume}</td>
+					<td>${listaClienti[i].telefon}</td>
+					<td><a href="#" onclick="modifica(${i})" >Modifica</a></td>
+					<td><a href="#" onclick="sterge(${i})" >Sterge</a></td>
+				</tr>`;
+				str +=rand;
+			}
+			console.log(str);
+			tabel.innerHTML=str;
+		}
+		</script>
+	</head>
+	<body onload="drawClienti();">
+	<div class="content">
+	<h1><big>Agenda</big></h1>
+	<form method="post" onsubmit="adaugaClient(this,event);" style="background-color:#ffd100;border-radius:5px;max-width:1550px;">
+		<fieldset style="border: 0px dashed #676767;">
+		<legend style="border: 0px dashed #676767;border-radius: 10px;padding: 0 5px;"></legend><br />
+		<label for="nume">Nume:</label>
+		<input name="nume" id="nume" type="text">
+		<label for="telefon">Telefon:</label>
+		<input name="telefon" id="telefon" type="number">
+		<div style="text-align:center;"><button class="btn button-add" id="btnAdd" onclick="saveContact(); display();">Adauga contact</button></div>
+		</div>
+	 </fieldset>
+	</form>
+	<br />
+	<table id="listaClienti" style="background-color:#ffd100;border-radius:5px;padding: 20px;">
+		<thead>
+			<tr>
+				<td><b>Nume</b></td>
+				<td><b>Telefon</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
 </body>
-
 </html>
