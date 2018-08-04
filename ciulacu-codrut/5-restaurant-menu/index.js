@@ -33,7 +33,7 @@ function displayProduse(list, obj_keys){
             <p><h5>${list[i].nume}</h5>
             <p>${list[i].ingrediente}</p>
             <div class="right">
-                    <a class="btn btn-lg btn-danger" role="button" href="details.html?id=${key}">Detalii</a>
+                 <a class="btn btn-lg btn-danger" role="button" href="details.html?id=${key}">Detalii</a>
             </div>
         </div><br/>
         `;

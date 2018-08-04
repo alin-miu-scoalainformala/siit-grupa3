@@ -9,17 +9,15 @@
         <script src="index.js"></script>
     </head>
 
-    <body onload="getDataFromDatabase(displayProduse);">
+    <body onload="populateDelete(getUrlVars()['id'])">
         <div class="header">
-            <p>
-                <a class="btn btn-lg btn-success" role="button" href="add.html">Adauga produs nou</a>
-            </p>
             <h3>Califoodication</h3>
         </div>
         <div class="main">
-
+            <h3>Esti pe cale sa stergi reteta: <span id="nume"></span></h3>
+            <h3>Esti de acord?</h3><br/>
+            <input type="submit" onclick="deleteItem(getUrlVars()['id']);" class="btn btn-lg btn-primary">
         </div>
     </body>
 
 </html>
-
