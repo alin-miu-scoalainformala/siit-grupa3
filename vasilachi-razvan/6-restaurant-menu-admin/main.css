@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&subset=latin-ext');
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:18px;
+}
+.container-fluid {
+    padding:0px;
+}
+.menu {
+    background: #c9023a;
+    height:80px;
+    color:#fff;
+}
+.menu-item {
+    font-size:18px;
+    font-weight:700;
+    text-transform: uppercase;
+    text-align: center;
+    border-left: 2px solid #b90335;
+    cursor:pointer;
+}
+.menu-item:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.menu-item:not(.logo-wrapper):hover {
+    background:#b90335;
+    cursor: pointer;
+}
+.kfc-logo {
+    vertical-align: middle;
+    max-height: 55px;
+    max-width: 160px;
+}
+main {
+    margin-top:40px;
+}

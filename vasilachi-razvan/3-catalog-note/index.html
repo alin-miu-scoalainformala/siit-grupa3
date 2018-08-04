@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col students">
+            <h3>Lista elevi</h3>
+            <form class="form-inline">
+                <input type="text" class="form-control" id="name" placeholder="Nume">
+                <button class="btn btn-secondary" onclick="addStudent(event)">Adauga elev</button>
+            </form>
+            <div class="sort-buttons">
+                <button class="btn btn-success" onclick="sortByAverage('ASC')">Sorteaza ASC</button>
+                <button class="btn btn-success" onclick="sortByAverage('DESC')">Sorteaza DESC</button>
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nume</th>
+                    <th scope="col">Medie note</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col marks">
+            <button class="btn btn-primary btn-sm" onclick="hideMarks()">Ascunde notele</button>
+            <h3>Note elev: <span class="student-name">Ionescu</span></h3>
+            <form class="form-inline">
+                <input type="text" class="form-control" id="marks" placeholder="Nota">
+                <button class="btn btn-secondary" onclick="addMark(event)">Adauga nota</button>
+            </form>
+            <div class="sort-buttons">
+                <button class="btn btn-success" onclick="sortMarks('ASC')">Sorteaza ASC</button>
+                <button class="btn btn-success" onclick="sortMarks('DESC')">Sorteaza DESC</button>
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nota</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <script>
+        var sortingDirection;
+        var currentSortingColumn;
+        var listaClienti = [];
+        var idsClientiFromServer = [];
+
+        function getListaClientiFromServer(callback) {
+            var promise = new Promise(function (resolve, reject) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            resolve(this.responseText);
+                        } else {
+                            reject(this.statusText);
+                        }
+                    }
+                };
+                xhttp.open("GET", "https://siit-bucuresti-1d094.firebaseio.com/.json", false);
+                xhttp.send();
+            });
+
+            promise.then(serverData => {
+                let serverDataAsJson = JSON.parse(serverData);
+
+                listaClienti = [];
+                if (serverDataAsJson !== null) {
+                    let serverKeys = Object.keys(serverDataAsJson);
+                    idsClientiFromServer = serverKeys;
+                    for (let i = 0; i < serverKeys.length; i++) {
+                        let client = serverDataAsJson[serverKeys[i]];
+                        listaClienti.push(client);
+                    }
+                }
+
+                callback(listaClienti);
+            });
+        }
+
+        function adaugaClientNou() {
+            let clientNou = {
+                "nume": document.getElementById('in_nume').value,
+                "prenume": document.getElementById('in_prenume').value,
+                "varsta": document.getElementById('in_varsta').value,
+                "telefon": document.getElementById('in_telefon').value.split(",")
+            };
+            var promise = new Promise((resolve, reject) => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            resolve();
+                        } else {
+                            reject();
+                        }
+                    }
+                };
+                xhttp.open("POST", "https://siit-bucuresti-1d094.firebaseio.com/.json", false);
+                xhttp.send(JSON.stringify(clientNou));
+            });
+
+            promise.then(res => {
+                getListaClientiFromServer(displayTable);
+            })
+        }
+
+        function stergeClient(id) {
+            var promise = new Promise((resolve, reject) => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            resolve();
+                        } else {
+                            reject();
+                        }
+                    };
+                }
+                xhttp.open("DELETE", `https://siit-bucuresti-1d094.firebaseio.com/lista_clienti/${id}.json`, false);
+                xhttp.send();
+            });
+
+            promise.then(res => {
+                getListaClientiFromServer(displayTable);
+            });
+        }
+
+        function displayTable(list) {
+            var body = document.querySelector('#displayTableId tbody');
+            var generatedBody = "";
+            for (let i = 0; i < list.length; i++) {
+                let idClient = idsClientiFromServer[i];
+                generatedBody += `
+<tr>
+<td class="sortable nume">${list[i].nume}</td>
+<td class="sortable prenume">${list[i].prenume}</td>
+<td class="sortable varsta">${list[i].varsta}</td>
+<td>${list[i].telefon}</td>
+<td>
+<button onclick="stergeClient('${idClient}')" style="width:100%;">Sterge</button>
+</td>
+</tr>
+`;
+            }
+            body.innerHTML = generatedBody;
+        }
+        function doSortingBy(column) {
+            sortingDirection = getNextSortingDirection(column);
+
+            if (!sortingDirection) {
+                column = 'initialOrder';
+            }
+            listaClienti.sort(function (a, b) {
+                if (sortingDirection == 'desc') {
+                    if (a[column] > b[column]) return -1;
+                    if (a[column] < b[column]) return 1;
+                    if (a[column] == b[column]) return 0;
+                } else {
+                    if (a[column] > b[column]) return 1;
+                    if (a[column] < b[column]) return -1;
+                    if (a[column] == b[column]) return 0;
+                }
+            });
+        }
+        function getNextSortingDirection(column) {
+            if (currentSortingColumn != column) {
+                sortingDirection = undefined;
+                currentSortingColumn = column;
+            }
+
+            if (!sortingDirection) return 'asc';
+            if (sortingDirection == 'asc') return 'desc';
+            if (sortingDirection == 'desc') return undefined;
+        }
+        function applySortingColors(column) {
+            let columnElementsToRemoveColor = document.querySelectorAll(`.sortable`);
+            for (let i = 0; i < columnElementsToRemoveColor.length; i++) {
+                columnElementsToRemoveColor[i].classList.remove('asc');
+                columnElementsToRemoveColor[i].classList.remove('desc');
+            }
+
+            let columnElementsToApplyColor = document.querySelectorAll(`.${column}`);
+            for (let i = 0; i < columnElementsToApplyColor.length; i++) {
+                columnElementsToApplyColor[i].classList.add(sortingDirection);
+            }
+        }
+    </script>
+    <style>
+        th {
+            min-width: 100px;
+        }
+
+        .sortable:hover {
+            cursor: pointer;
+        }
+
+        .asc {
+            background: greenyellow;
+        }
+
+        .desc {
+            background: red;
+        }
+    </style>
+</head>
+
+<body onload="getListaClientiFromServer(displayTable);">
+<table border="1">
+    <tbody>
+    <tr>
+        <th>Nume</th>
+        <td>
+            <input id="in_nume" />
+        </td>
+    </tr>
+    <tr>
+        <th>Prenume</th>
+        <td>
+            <input id="in_prenume" />
+        </td>
+    </tr>
+    <tr>
+        <th>Varsta</th>
+        <td>
+            <input id="in_varsta" />
+        </td>
+    </tr>
+    <tr>
+        <th>Telefon</th>
+        <td>
+            <input id="in_telefon" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button style="width: 100%;" onclick="adaugaClientNou()">Adauga Client Nou</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table border="1" id="displayTableId">
+    <thead>
+    <th class="sortable nume" onclick="doSortingBy('nume'); displayTable(listaClienti); applySortingColors('nume');">Nume</th>
+    <th class="sortable prenume" onclick="doSortingBy('prenume'); displayTable(listaClienti); applySortingColors('prenume');">Prenume</th>
+    <th class="sortable varsta" onclick="doSortingBy('varsta'); displayTable(listaClienti); applySortingColors('varsta');">Varsta</th>
+    <th>Telefon</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+</body>
+
+</html>

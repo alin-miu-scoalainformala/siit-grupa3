@@ -1,0 +1,6 @@
+.marks {
+    display:none;
+}
+.marks.active {
+    display:block;
+}
