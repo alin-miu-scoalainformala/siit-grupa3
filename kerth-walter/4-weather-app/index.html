@@ -1,7 +1,36 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+	<title> Weather app </title>
+	<link rel="stylesheet" href="style.css"></link>
+	<script src="script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbyqHeNroKy-qDXZ0a-o63cvx1NljwVsY&callback=myMap">
+	</script>
+</head>
 <body>
-    TODO: implementare weather app
+	<div id="div1">
+		<input type="text" id="oras" placeholder="Please insert city name in english : e.g. London" />
+		<input onclick="afisareVreme(this, event)" type="button" id="afiseazaVremea"
+		 value="Afiseaza vremea" />
+		<input onclick="afisarePrognoza(this, event)" type="button" id="afiseazaPrognoza"
+		 value="Afiseaza prognoza" />
+	</div>
+	<br />
+	<div id="div2"><big>Vremea acum</big>
+		<hr />
+		<br />
+		<div id="container">
+			<div>
+				<ul id="vremeaAcum"></ul>
+			</div>
+			<div id="map"></div>
+		</div>
+	</div>
+	<br />
+	<div id="div3"><big>Vremea in urmatoarele zile</big>
+		<hr />
+		<br />
+		<div class="containerPrognoza"></div>
+	</div>	
 </body>
-
 </html>
