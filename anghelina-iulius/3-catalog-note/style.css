@@ -1,3 +1,7 @@
+* {
+    font-family: 'Exo', sans-serif;
+}
+
 :root {
     --mushroom: #fef2e4;
     --onion: #fd974f;
@@ -5,7 +9,6 @@
     --driftwood: #805a3b; 
 }
 body {
-    font-family: 'Exo', sans-serif;
     max-width: 1024px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -51,7 +54,6 @@ header {
     box-shadow: inset 2px 2px 10px var(--driftwood);
 }
 header h1 {
-    font-family: 'Exo', sans-serif;
     font-size: 5rem;
     color: var(--mushroom);
     text-shadow: 2px 2px 5px var(--driftwood);
@@ -76,11 +78,9 @@ header h1 {
     padding: 0 7px;
 }
 input::placeholder {
-    font-family: 'Exo', sans-serif;
     color: var(--onion);
 }
 #add-student {
-    font-family: 'Exo', sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -128,7 +128,6 @@ input::placeholder {
     box-shadow: none;
 }
 .sort {
-    font-family: 'Exo', sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -178,7 +177,6 @@ input::placeholder {
     box-shadow: none;
 }
 .hide {
-    font-family: 'Exo', sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -201,9 +199,6 @@ input::placeholder {
 }
 .hide:active {
     box-shadow: none;
-}
-table {
-    table-layout: fixed;
 }
 .student-list {
     margin-top: 30px;
@@ -282,4 +277,13 @@ footer a {
 footer a:hover {
     cursor: crosshair;
     text-shadow: 0px 1px 1px var(--driftwood);
+}
+.grades .delete {
+    position: relative;
+    float: right;
+    color: rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+}
+.grades .delete:hover {
+    color: red;
 }

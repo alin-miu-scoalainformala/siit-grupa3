@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Patua+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="getStudentsFromServer()">
 <div class="main-wrapper">
     <div class="wrapper">
         <header>
@@ -18,7 +18,7 @@
 
         <form class="add-student">
             <label for="name"></label><input type="text" id="name" placeholder="adaugă nume.." autofocus>
-            <button type="submit" id="add-student" onclick="addStudent(studentArray); generateStudentList(studentArray)">Adaugă Elev</button>
+            <button type="submit" id="add-student" onclick="addStudent();">Adaugă Elev</button>
         </form>
 
         <button type="button" class="sort" onclick="averageSortAsc()">Sorteaza Ascendent</button>
