@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(141, 37, 37);
+}
+
+#main {
+    width: 75%;
+    background-color: rgba(97, 77, 77, 0.8);
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#error {
+    color: rgb(228, 114, 114);
+    opacity: 0;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    transition: all, 0.8s;
+}
+
+#itemsAction {
+    display: none;
+}
+.bought {
+    text-decoration: line-through;
+}
+   

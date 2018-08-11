@@ -1,7 +1,42 @@
 <html>
 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
 <body>
-    TODO: implementare shopping list
+    <div id="main">
+        <div id="title1">
+            Shopping List
+        </div>
+        <div id="inputButton">
+            <form>
+                <input id="input" class="product" type="text" placeholder="Type product name..." required />
+                <label id="error">Product is missing!!!</label>
+                <button id="Button" type="submit" value="Add item" onclick="addProduct();displayItems();">Add item</button>
+            </form>
+        </div>
+        
+        <div id="itemsAction">
+                <div id="sort">
+                        <button id="asc" onclick="sortAsc()">Sort asc</button>
+                        <button id="desc" onclick="sortDesc()">Sort desc</button>
+                    </div>
+            <table id="myTable">
+                <thead>
+                    <th class="theader1">Item description</th>
+                    <th class="theader2">Action</th>
+                </thead>
+                <tbody id="body">
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="behaviour.js"></script>
 
 </html>
