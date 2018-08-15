@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
 </head>
 
 <body>
@@ -24,12 +26,10 @@
 </header>
 <main>
     <div class="container">
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewProduct">
+        <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addNewProduct">
             Add new product
         </button>
         <table class="table">
-            <caption>SANDWICHES & WRAPS</caption>
             <thead>
             <tr>
                 <th scope="col">#</th>
@@ -61,21 +61,18 @@
         </table>
     </div>
 
-
-
-
     <!-- Modal -->
-    <div class="modal fade" id="addNewProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="addNewProduct" tabindex="-1" role="dialog" aria-labelledby="addNewProductLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="addNewProductLabel">Add new product</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="col-6">
                                 <div class="form-group">
@@ -107,6 +104,12 @@
                                 <div class="form-group">
                                     <label for="product-price">Product Price</label>
                                     <input type="text" id="product-price" class="form-control" placeholder="product price">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="image">Upload Product Image</label>
+                                    <input type="file" class="form-control-file" id="image">
                                 </div>
                             </div>
                         </div>
