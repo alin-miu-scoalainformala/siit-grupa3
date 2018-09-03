@@ -1,22 +1,18 @@
 var lista = [];
 var listaProduseCumparate = [];
 function addProduct() {
-    var product = document.querySelector('input').value;
-    document.getElementById('itemsAction').style.display = "block";
-   //document.getElementById('input').value = "";
-    lista.push(product);
-    displayItems();
-    /*
-    if(product) {
+    var product = document.getElementById('input').value;
+
+    if (product) {
+        
         var body = document.getElementById('body');
+        
         document.getElementById('itemsAction').style.display = "block";
         var addProduct = `
         <tr>
-            <td class="${cssItem}">
-                ${item}
-            </td>
+            <td class="product">${product}</td>
             <td>
-                <button onclick="markAsBuy('${item}')">Mark as buy</button>
+                <button onclick="markAsBought('${product}')">Mark as bought</button>
             </td>
         </tr>
         `;
@@ -24,11 +20,16 @@ function addProduct() {
     
         product.value = '';
         document.getElementById("error").style.opacity = "0";
+        lista.push(product);  
+        displayItems();  
     } else {
+        
         document.getElementById("error").style.opacity = "100";
-    }*/
-   
+    }
+    
+    
 }
+
 
 function displayItems() {
     var generatedHtml = ``;
@@ -44,7 +45,7 @@ function displayItems() {
                 ${item}
             </td>
             <td>
-                <button onclick="markAsBuy('${item}')">Mark as bought</button>
+                <button id="bought" onclick="markAsBought('${item}')">Mark as bought</button>
             </td>
         </tr>
         `;
@@ -52,23 +53,21 @@ function displayItems() {
     document.getElementById('body').innerHTML = generatedHtml;
 }
 
-function markAsBuy(produs) {
+
+function markAsBought(produs) {
     listaProduseCumparate.push(produs);
     displayItems();
 }
 
 
-
 function sortAsc() {
     lista.sort();
     displayItems();
-
 }
+
 
 function sortDesc() {
     lista.sort();
     lista.reverse();
     displayItems();
-
 }
-
