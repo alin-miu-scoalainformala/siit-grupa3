@@ -206,9 +206,10 @@ tr {
 }
 
 #footer {
+   position: absolute;
+   bottom: 0;
+   right: 24.5%;
    width: 50%;
-   margin: auto;
-   margin-bottom: 0;
    padding: 1rem 0;
    background-color: #252629;
    text-align: center;
