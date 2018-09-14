@@ -208,7 +208,7 @@ tr {
 #footer {
    width: 50%;
    margin: auto;
-   bottom: 0;
+   margin-bottom: 0;
    padding: 1rem 0;
    background-color: #252629;
    text-align: center;
