@@ -1,7 +1,32 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body onload="drawLista();" >
 
-<body>
-    TODO: implementare restaurant menu admin
+        <form onsubmit="event.preventDefault();drawLista();">
+                <h1> Cald si bun (Admin)</h1> </br>
+                 <span > <a class="contact" href="add.html">Adauga reteta noua</a> </span>    
+                 <img src="loader.gif" id="loading" alt="no image" >            
+        </form>         
+
+
+    <table id="listaProduse" class="col-md-2">
+		<thead> </thead>
+		<tbody id="tbody">           
+           <tr> 
+            <td>Imagine</td>
+                <td> <div> Nume </div>
+                     <div> Ingrediente </div>             
+                </td>
+				<td> Button</td>
+            </tr>
+        </tbody>
+    </table>
+    
 </body>
-
 </html>

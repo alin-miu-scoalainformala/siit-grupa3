@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="add.css" />
+    <script src="add.js"></script>
+</head>
+
+<body>
+    <h1> Cald si bun (Admin)</h1>
+    </br>
+    <img src="loader.gif" id="loading" alt="no image" style="display:none">
+    <form method="post" onsubmit="adaugaPreparat(this,event);">
+        <label for="nume" class="label">Nume:</label>
+        <input name="nume" id="nume" type="text"> </br>
+        <label for="imagine" class="label">URL Imagine:</label>
+        <input name="imagine" id="imagine" type="text">
+        </br>
+        <label for="ingrediente" class="label">Ingrediente:</label>
+        <input name="ingrediente" id="ingrediente" type="text">
+        <br>
+        <label for="reteta" class="label">Mod preparare:</label>
+        <input name="reteta" id="reteta" type="text">
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="Adauga preparat" class="contact" />
+        </div>
+    </form>
+</body>
+
+</html>
