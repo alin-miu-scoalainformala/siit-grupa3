@@ -19,7 +19,7 @@ function  generateHTMLForProducts(product, index){
         <td style="width: 40%;"><a style="float: left;" href="../details/details.html?id=${product.key}">${product.nume}</a></td>
         <td style="width: 15%;"><span style="float: center;">${product.pret}</span></td>
         <td style="width: 15%;"><a style="float: left; text-decoration: none;" href="javascript:addCantity(${index});">+</a><span style="float: center;">${product.cantitate}</span><a style="float: right; text-decoration: none;" href="javascript:subtractCantity(${index});">-</a></td>
-        <td style="width: 15%;">${calcSubtotal(index)}</td>
+        <td style="width: 15%;">${calcSubtotal(index).toFixed(2)}</td>
         <td style="width: 15%;"><a href="javascript:removeItem('${index}')">Remove</a></td>             
     </tr> `;
 }
@@ -71,7 +71,7 @@ function calcTotal(list){
         res += calcSubtotal(index);
     });
 
-    return res + transport;
+    return (res + transport).toFixed(2);
 }
 
 function initHTML(list){
@@ -97,7 +97,7 @@ function initHTML(list){
                                 <h5>Number of products: ${list.length}</h5>
                                 <h5>Transport cost: ${transport}$</h5>
                                 <h2>Total: ${calcTotal(list)}</h2>
-                                <button class="btn btn-success">Buy Now</button> 
+                                <button class="btn btn-success" style="margin-bottom: 10px;">Buy Now</button> 
                             </div>
                     </div>`;
 }

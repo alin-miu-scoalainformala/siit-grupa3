@@ -64,6 +64,7 @@ function showFoundProducts(){
 async function searchElement(input){
     var products = await getProductsFromServer();
     var res = [];
+    
 
     if(input.value !== "") {
         for (let i = 0; i < products.length; i++) {

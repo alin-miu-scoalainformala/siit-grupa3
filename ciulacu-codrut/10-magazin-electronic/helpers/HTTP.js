@@ -13,6 +13,13 @@ class Http{
         });
     }
 
+    GETWITHOUTANIMATION(uri){
+        return fetch(uri, {
+            method: 'GET'
+        })
+        .then(res => res.json());
+    }
+
     POST(uri, obj){
         return fetch(uri, {
             method: 'POST',

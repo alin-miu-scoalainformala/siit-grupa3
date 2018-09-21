@@ -1,4 +1,8 @@
-document.querySelector('.alert').style = "visibility: hidden;";
+
+async function getDetailsAboutProductWithoutAnimation(idProduct){
+    var details = await http.GETWITHOUTANIMATION(PRODUCT_URI + idProduct + '.json');
+    return details;
+}
 
 async function getDetailsAboutProduct(idProduct){
     var details = await http.GET(PRODUCT_URI + idProduct + '.json');
@@ -20,7 +24,7 @@ function initHTML(details){
     console.log(details)
     document.querySelector('#main').innerHTML =  `
         <div class="card text-center mb-4 box-shadow">
-            <img class="card-img-top pt-3 " id="img" src="" style="width: 400px; height: 287.992px; margin-left: 30%;" alt="Card image cap">
+            <img class="card-img-top pt-3 " id="img" src="" style="width: 400px; height: 287.992px; margin-left: 35%;" alt="Card image cap">
             <div class="card-body ml-5" style="float: right;">
                 <h5 class="card-title mb-4" id="title"></h5>
                 <h6 class="card-subtitle" id="price"></h6><br/>
@@ -45,7 +49,7 @@ async function putInYourCart(){
     setTimeout(() => {
         document.querySelector('.alert').style = "visibility: hidden;";
     }, 3000);
-    var productData = await getDetailsAboutProduct(getProductIdFromURL());
+    var productData = await getDetailsAboutProductWithoutAnimation(getProductIdFromURL());
     var cartList = JSON.parse(localStorage.getItem('cart'));
     cartList.push({'nume': productData.title,
                    'key': getProductIdFromURL(),   

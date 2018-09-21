@@ -13,21 +13,29 @@
         <script src="helpers/help.js"></script>
         <script src="index.js"></script>
         <script>
-            
+            async function getUsersFromServer(){
+                var data = await fetch('https://siit-buc3.firebaseio.com/onlineShop/users/.json');
+                var dataAsJSON = await data.json();
+                return dataAsJSON;
+            }
 
-            function getLoggedIn(){
+            async function getLoggedIn(){
+                var usersList = await getUsersFromServer();
+
                 var username = document.getElementById('exampleInputUsername').value;
                 var password = document.getElementById('exampleInputPassword').value;
-
-                if(username === 'John'){
-                    if(password === '123'){
-                        window.location.href = 'admin/admin.html';
-                    }else{
-                        console.log('Your password is wrong!');
-                    }
+                
+                var found = usersList.find((element) => {
+                    console.log(element.password === password);
+                    return element.username === username && element.password === password;
+                });
+                
+                if(found != null){
+                    window.location.href = 'admin/admin.html';
                 }else{
-                    console.log('Your username is wrong!');
+                    console.log('No');
                 }
+                
             }
         </script>
     </head>
@@ -46,11 +54,6 @@
                 </div>
 
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="cart/cart.html">Cart</a>
                     </li>
@@ -74,12 +77,12 @@
                     <div class="modal-body">
                             <div class="form-group">
                                     <label for="exampleInputUsername">Username</label>
-                                    <input type="username" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="username" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp" placeholder="Enter username">
 
                                   </div>
                                   <div class="form-group">
                                     <label for="exampleInputPassword">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Enter password">
                                   </div>
                     </div>
                     <div class="modal-footer">
