@@ -31,7 +31,7 @@
 </header>
 <main>
     <div class="container">
-        <div class="row products">
+        <div class="row product-details">
 
         </div>
     </div>
@@ -42,7 +42,42 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 <script>
-    homepageMenu();
+    const params = new URLSearchParams(document.location.search.substring(1));
+    const id = params.get("id");
+    var productDetails = getProduct(id);
+
+    select('.product-details').innerHTML = `
+        <div class="col-sm-6">
+            <div class="image"><img src="${productDetails.image}"></div>
+        </div>
+        <div class="col-sm-6">
+            <h2>${productDetails.nume}</h2>
+            <p>${productDetails.descriere}</p>
+            <p class="price">PRET: ${productDetails.pret} RON</p>
+            <input id="counter" type="number" value="1" min="1">
+            <button class="btn btn-primary" onclick="addToCart()">Adauga in cos</button>
+        </div>
+    `;
+    function addToCart(){
+        let counter = parseInt(select('#counter').value);
+        let keys = Object.keys(localStorage);
+        for (let i = 0; i < keys.length; i++) {
+            let storageCounter = parseInt(localStorage.getItem(keys[i]));
+            if(keys[i]===id){
+                counter = counter + storageCounter;
+            }else {
+
+            }
+        }
+        // var cartObject = JSON.parse(localStorage.getItem("cart"));
+        // for( product in cartObject){
+        //     console.log(product);
+        // }
+        // cartObject.push({ 'id': id, 'counter': counter });
+        localStorage.setItem(id, counter);
+        showAlert("Produsul a fost adaugat cu succes");
+    }
+
 </script>
 </body>
 </html>
