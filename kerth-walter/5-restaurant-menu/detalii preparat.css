@@ -1,0 +1,54 @@
+body{
+    background-image:url(background.jpg);
+    padding:20px;
+    font-size: 1.5em;
+    color: rgb(136, 4, 4);
+}
+
+h1 {
+    display: inline-block;
+    color: rgb(136, 4, 4);
+    font-size: 1.8em;  
+}
+
+img {
+    width:300px;
+    padding:5px;
+}
+
+#nume{
+    font-weight:bold;
+    padding:20px 0px;
+    font-size:1.1em;
+
+}
+
+#menu {
+    background-color:rgb(136, 4, 4);
+    width: 150px;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(54, 1, 1);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 250px;
+}
+
+#contact {
+    background-color: rgb(161, 42, 165);
+    width: 150px;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(78, 3, 97);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}

@@ -1,0 +1,38 @@
+body{
+    background-image:url(background.jpg);
+    padding:20px;
+}
+
+h1 {
+    display: inline-block;
+    color: yellow;
+    font-size: 3em; 
+}
+
+img { display:inline-block;
+    width:150px;
+}
+
+input[type=text]{
+    margin:20px;
+    width:250px;
+    align:right;
+}
+
+.label{
+    width:150px;
+    color: yellow;
+    display:inline-block;
+}
+
+.contact{
+    background-color:rgb(0, 132, 255);
+    width: 150px;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}

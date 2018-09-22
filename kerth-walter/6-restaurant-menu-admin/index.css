@@ -1,0 +1,78 @@
+body{
+    background-image:url(background.jpg);
+    padding:20px;
+}
+
+h1 {
+    display: inline-block;
+    color: yellow;
+    font-size: 3em;  
+}
+
+img { display:inline-block;
+    width:150px;
+}
+
+td {
+  padding:20px;
+
+}
+.denumire{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: yellow;
+} 
+form{
+    padding: 10px;
+}
+
+table{
+    width:100%;
+    font-size: 1.5em;
+    color: yellow;
+}
+
+a.contact {
+    color: yellow;
+}
+a.detalii:link, a.detalii:visited  {
+    background-color: olive;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(34, 34, 2);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float:right;
+}
+
+a.detalii:hover, a.detalii:active {
+    background-color: red;
+    color: white;
+    float:right;
+}
+
+
+a.modifica:link, a.modifica:visited  {
+    background-color: rgb(161, 42, 165);
+    width: 150px;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(78, 3, 97);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}
+
+a.modifica:hover, a.modifica:active {
+    background-color: green;
+    color: white;
+    float:right;
+}
+
+

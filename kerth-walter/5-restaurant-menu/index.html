@@ -1,7 +1,37 @@
+<!DOCTYPE html>
 <html>
 
-<body>
-    TODO: implementare restaurant menu
+<head>
+    <meta charset="utf-8" />
+    <title>Restaurant menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="meniu preparate.css" />
+    <script src="meniu preparate.js"></script>
+</head>
+
+<body onload="drawLista();">
+    <form onsubmit="event.preventDefault();drawLista();">
+        <h1> Cald si bun</h1>
+        </br>
+        <span>
+            <a class="contact" href="contact.html">Contact</a>
+        </span>
+        <input type="text" name="text_box_1" id="text_box_1" placeholder="Search ...">
+        <button type="button" id="button2" onclick="drawLista()">Cauta in ingrediente</button>
+    </form>
+    <table id="listaProduse" class="col-md-2">
+        <thead> </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>Imagine</td>
+                <td>
+                    <div> Nume </div>
+                    <div> Ingrediente </div>
+                </td>
+                <td> Button</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
