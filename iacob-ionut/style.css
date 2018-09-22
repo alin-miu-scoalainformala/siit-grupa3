@@ -45,7 +45,6 @@ li {
     border-radius: 100px;
     padding: 10px;
     transition-duration: 1s;
-    border-color: white;
     cursor: pointer;
     
 }
@@ -53,14 +52,19 @@ li {
 #links:hover {
     width: 20%;
     padding: 20px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.3);
+    color: black;
     
 }
 
 #links ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
+}
+
+#links ul li a:hover {
+    color: black;
 }
 
 
