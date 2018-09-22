@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +7,32 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="behaviour.js"></script>
-    <title>eOn Store</title>
+    <title>eOn | Store</title>
 </head>
-    
-<body onload="showProducts(getProductsFromServer())">
+
+<body onload="showProducts(getProductsFromServer()); showCounter()">
     <div id="container">
         <ul>
             <li>
                 <a id="store" class="active" href="index.html">eOn Store</a>
             </li>
             <li>
-                <a class="aFontSize" id="newsButton" href="index.html">News</a>
+                <a class="aFontSize" id="newsButton" href="https://en.wikipedia.org/wiki/E-commerce">About</a>
             </li>
             <li>
                 <a class="aFontSize" href="index.html">Contact</a>
             </li>
             <li id="adminButton" style="float:right">
-                <a class="aFontSize" href="index.html"><i class="fas fa-fingerprint"></i>&nbsp;Admin</a>
+                <a class="aFontSize" href="adminLogIn.html">
+                    <i class="fas fa-fingerprint"></i>&nbsp;Admin</a>
             </li>
             <li style="float:right">
-                <a class="aFontSize" href="index.html"><i class="fas fa-shopping-cart"></i>&nbsp;Shopping cart</a>
+                <a class="aFontSize" href="shoppingCart.html">
+                    <i class="fas fa-shopping-cart"></i>&nbsp;Shopping cart <span id="itemsCounter">(0)</span></a>
             </li>
         </ul>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -73,12 +73,12 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        <div id="categories">
+          <div id="categories">
 
         </div>
-    </div>
 
     <script src="behaviour.js"></script>
+
 </body>
 
 </html>
