@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body onload="gestionareProduse()">
+        <div class="topBar">
+                <a href="index.html">
+                    <h1 id="topBarLogo">Georgia's Shop</h1>
+                </a>
+                <div id="divtopBarButtons">
+                    <button class="topBarButton" onclick="goToShoppingCart()">Shopping Cart</button>
+                    <button class="topBarButton" onclick="goToAdminPage()">Admin</button>
+                </div>
+            </div>
+    <div id="Content">
+        <div class="divContent">
+            <div id="AliniereDiv">
+            <div class="AdminName">Gestionare produse</div>
+            <button id="AdaugaProdus">Adauga produs</button>
+            </div>
+            <table class="AdminTable">
+                <thead class="TableHead">
+                    <th class="TableCell">Imagine</th>
+                    <th class="TableCellName">Nume</th>
+                    <th class="TableCell">Pret</th>
+                    <th class="TableCell">Cantitate</th>
+                    <th class="TableCell"></th>
+                </thead>
+                <tbody id="TableBody">
+            <!--
+                    <tr>
+                        <td class="TableCellImage">
+                            <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png">
+                        </td>
+                        <td class="TableCellName">iPhone X</td>
+                        <td class="TableCell">5000 RON</td>
+                        <td class="TableCell">3</td>
+                        <td class="TableCell">
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="TableCellImage">
+                            <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png">
+                        </td>
+                        <td class="TableCellName">iPhone X</td>
+                        <td class="TableCell">5000 RON</td>
+                        <td class="TableCell">3</td>
+                        <td class="TableCell">
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="TableCellImage">
+                            <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png">
+                        </td>
+                        <td class="TableCellName">iPhone X</td>
+                        <td class="TableCell">5000 RON</td>
+                        <td class="TableCell">3</td>
+                        <td class="TableCell">
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="TableCellImage">
+                            <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png">
+                        </td>
+                        <td class="TableCellName">iPhone X</td>
+                        <td class="TableCell">5000 RON</td>
+                        <td class="TableCell">3</td>
+                        <td class="TableCell">
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

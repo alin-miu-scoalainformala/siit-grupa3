@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body onload="adaugaInTabel()">
+    <div class="topBar">
+        <a href="index.html">
+            <h1 id="topBarLogo">Georgia's Shop</h1>
+        </a>
+        <div id="divtopBarButtons">
+            <button class="topBarButton" onclick="goToShoppingCart()">Shopping Cart</button>
+            <button class="topBarButton" onclick="goToAdminPage()">Admin</button>
+        </div>
+    </div>
+    </div>
+    <div id="Content">
+        <div class="divContent">
+            <div class="ShoppingCartName">Shopping Cart</div>
+            <div id="divTotal">
+                <!--
+                    <div id="Cantitate">Numar produse: <span id="countProducts">1</span></div>
+                    <div id="TVA">TVA: <span id="TVA%">9%</span></div>
+                    <div id="Total">Total: <span id="TotanSpan">1</span></div>
+                    <button id="Cumpara">Cumpara</button>
+                -->
+            </div>
+            <table class="shoppingCartTable">
+                <thead class="TableHead">
+                    <th class="TableCell">Imagine</th>
+                    <th class="TableCellName">Nume</th>
+                    <th class="TableCell">Pret</th>
+                    <th class="TableCell">Cantitate</th>
+                    <th class="TableCell">Subtotal</th>
+                    <th class="TableCell"></th>
+                </thead>
+                <tbody id="TableBody">
+                    <!--
+                    <tr>
+                        <td class="TableCellImage"> <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png"></td>
+                        <td class="TableCellName">iPhone X</td>
+                        <td class="TableCell">5000 RON</td>
+                        <td class="TableCell"><a>-</a> 3 <a>+</a></td>
+                        <td class="TableCell">15000 RON</td>
+                        <td class="TableCell">
+                            <a>Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class="TableCellImage"> <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png"></td>
+                            <td class="TableCellName">iPhone X</td>
+                            <td class="TableCell">5000 RON</td>
+                            <td class="TableCell"><a>-</a> 3 <a>+</a></td>
+                            <td class="TableCell">15000 RON</td>
+                            <td class="TableCell">
+                                <a>Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td class="TableCellImage"> <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png"></td>
+                                <td class="TableCellName">iPhone X</td>
+                                <td class="TableCell">5000 RON</td>
+                                <td class="TableCell"><a>-</a> 3 <a>+</a></td>
+                                <td class="TableCell">15000 RON</td>
+                                <td class="TableCell">
+                                    <a>Remove</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td class="TableCellImage"> <img class="ImageShoppingCart" src="https://clipart.info/images/ccovers/1505918647iphone-x-png.png"></td>
+                                    <td class="TableCellName">iPhone X</td>
+                                    <td class="TableCell">5000 RON</td>
+                                    <td class="TableCell"><a>-</a> 3 <a>+</a></td>
+                                    <td class="TableCell">15000 RON</td>
+                                    <td class="TableCell">
+                                        <a>Remove</a>
+                                    </td>
+                                </tr>
+                  -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.topBar {
+    margin-top: -150px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-right: 10%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    border-color: gold;
+    background-color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+   
+}
+
+hr {
+    border-color: gold;
+}
+
+#topBarLogo {
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 0;
+    margin: auto;
+    font-family: 'Megrim';
+    color: goldenrod;
+    font-size: 50px;
+    display: block;
+
+}
+
+#divtopBarButtons {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.topBarButton {
+    width: 150px;
+    height: 23px;
+    font-family: 'Questrial';
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.topBarButton:hover {
+    background-color: gold;
+}
+
+
+/*PAGE 1 - INDEX.HTML */
+
+#Content {
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 500px;
+}
+
+.divProducts {
+    background-color: white;
+    border: 1px solid;
+    border-color: gold;
+    border-radius: 15px 50px 15px 50px;
+    overflow: hidden;
+    float: left;
+    padding: 20px 40px 20px 40px;
+    margin: 15px;
+}
+
+.divImage {
+    height: 220px;
+    width: 150px;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.Image {
+    height: 200px;
+    margin-top: 10px;
+    flex: none;
+}
+
+.productName {
+    margin-top: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    font-family: 'Questrial';
+}
+
+.productPrice {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+    font-size: 15px;
+    font-family: 'Questrial';
+}
+
+.productDescribeButton {
+    margin-top: 10px;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    border: 1px solid;
+    background-color: transparent;
+    border-color: lightgrey;
+    border-radius: 10px;
+    font-family: 'Questrial';
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.describeProduct:hover {
+    background-color: whitesmoke;
+}
+
+/*PAGE 2 - DESCRIBTION.HTML */
+#divContent {
+    background-color: white;
+    border: 1px solid;
+    border-color: gold;
+    border-radius: 15px 50px 15px 50px;
+    overflow: hidden;
+    padding: 20px 40px 20px 40px;
+}
+
+.divLeft {
+    float: left;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.divRight {
+    float: right;
+    width: 30%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.divImageZoom {
+    height: 220px;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.divProduct2Name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Questrial';
+    text-align: center;
+    overflow: hidden;
+}
+
+.divProduct2Price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Questrial';
+}
+
+.divProductDescription {
+    font-size: 22px;
+    font-family: 'Questrial';
+    text-decoration-line: underline; 
+}
+
+.Paragraf {
+    font-size: 15px;
+    font-family: 'Questrial';
+    text-align: justify;
+}
+
+.divAvailability {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    font-family: 'Questrial';
+    float: left;
+    margin-top: 50px;
+    color: green;
+}
+
+#divQuantity {
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    font-family: 'Questrial';
+    float: left;
+    margin-top: 20px;
+}
+
+#QuantityBox {
+    width: 40px;
+    border-radius: 10px;
+    height: 20px;
+    outline: none;
+
+}
+
+.BuyButton {
+    margin-top: 20px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Questrial';
+    font-weight: bold;
+    background-color: gold;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    border-color: transparent;
+    outline: none;
+}
+
+/*PAGE 3 - SHOPPING CART */
+.ShoppingCartName {
+    font-size: 40px;
+    font-family: 'Questrial';
+    text-decoration-line: underline;
+    color: darkslategray;
+}
+
+.shoppingCartTable {
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Questrial';
+}
+
+.TableHead {
+    color: goldenrod;
+    border-bottom: 2px solid;
+}
+
+#divTotal {
+    float: right;
+    font-family: 'Questrial';
+    margin-top: 50px;
+}
+
+#Cumpara {
+    border-radius: 20px;
+    font-family: 'Questrial';
+    font-weight: bold;
+    background-color: gold;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    border-color: transparent;
+    outline: none;
+    margin-top: 20px;
+}
+
+.TableCell {
+    width: 100px;
+    height: 50px;
+}
+
+.TableCellName {
+    height: 50px;
+}
+
+.ImageShoppingCart {
+    height: 50px;
+    flex: none;
+}
+
+.TableCellImage {
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+/*PAGE 4 - ADMIN */
+
+.AdminName {
+    font-size: 40px;
+    font-family: 'Questrial';
+    color: darkslategray;
+    margin-left: 10%;  
+    float: left;
+}
+
+.AdminTable {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Questrial';
+}
+
+
+#AdaugaProdus {
+    float: right;
+    border-radius: 20px;
+    font-family: 'Questrial';
+    font-weight: bold;
+    background-color: goldenrod;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    border-color: transparent;
+    outline: none;
+    margin-top: 10px;
+
+}
