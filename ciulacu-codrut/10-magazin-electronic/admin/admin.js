@@ -16,13 +16,13 @@ async function displayProducts(productsAsPromise) {
             if(products[idProduct] != null){
                 document.querySelector('tbody').innerHTML += generateHTMLForProduct(idProduct, products[idProduct]);
             }
-        }, 500);
-    })
+        });
+    }, 500);
 }
 
 function generateHTMLForProduct(idProduct, product){
     return `<tr>
-                <td style="width: 1%;"><img src="${product.img}" style="width: 60%; height: 7%;"></td>
+                <td style="width: 1%;"><img src="${product.img}" style="width: 100px; height: 50px;"></td>
                 <td style="width: 10%;"><a style="float: left;" href="edit.html?id=${idProduct}">${product.title}</a></td>
                 <td style="width: 1%;">${product.price} Lei</td>
                 <td style="width: 1%;"><span style="float: right;">${product.cantitate}</span></td>
@@ -73,7 +73,7 @@ async function addItem(){
 }
 
 async function populateEditForm(idProduct){
-    var product = await http.GET(PRODUCT_URI + idProduct + SUFFIX);
+    var product = await http.GETWITHOUTANIMATION(PRODUCT_URI + idProduct + SUFFIX);
     document.getElementById('nume').value = product.title;
     document.getElementById('url').value = product.img;
     document.getElementById('reteta').value = product.descriere;
