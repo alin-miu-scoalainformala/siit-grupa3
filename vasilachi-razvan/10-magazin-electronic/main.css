@@ -8,8 +8,13 @@ body {
 }
 .menu {
     background: #c9023a;
-    height:80px;
     color:#fff;
+    height:55px;
+    line-height: 55px;
+}
+.menu a {
+    color:#FFF;
+    text-decoration: none;
 }
 .menu-item {
     font-size:18px;
@@ -19,12 +24,7 @@ body {
     border-left: 2px solid #b90335;
     cursor:pointer;
 }
-.menu-item:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
+
 .menu-item:not(.logo-wrapper):hover {
     background:#b90335;
     cursor: pointer;
@@ -39,4 +39,32 @@ main {
 }
 .table td, .table th {
     vertical-align: middle!important;
+}
+.custom-alert {
+    position: fixed;
+    top: 110px;
+    right: -500px;
+    transition:1s ease;
+}
+.custom-alert.active {
+    right:20px;
+}
+.products-table img {
+    max-width: 110px;
+}
+.products .item {
+    text-align:center;
+    margin-bottom:30px;
+    cursor:pointer;
+    overflow: hidden;
+    position:relative;
+}
+.products img {
+    width:100%;
+}
+.product-details .image img {
+    width:100%;
+}
+.products-table {
+    text-align:center;
 }

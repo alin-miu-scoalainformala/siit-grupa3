@@ -6,7 +6,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 </head>
 
-<body class="homepage">
+<body class="cart">
 <header>
     <div class="container-fluid menu">
         <div class="row no-gutters">
@@ -31,8 +31,27 @@
 </header>
 <main>
     <div class="container">
-        <div class="row products">
-
+        <div class="row">
+            <div class="col-sm-9">
+                <table class="table table-hover products-table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"></th>
+                        <th scope="col">Nume</th>
+                        <th scope="col">Pret</th>
+                        <th scope="col">Cantitate</th>
+                        <th scope="col">Sterge</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3 text-right">
+                <p><strong>Total: </strong><span class="total"></span> RON</p>
+                <p><strong>Numar produse: </strong><span class="numar-produse"></span></p>
+            </div>
         </div>
     </div>
 </main>
@@ -42,7 +61,35 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 <script>
-    homepageMenu();
+    getCartItems();
+    function getCartItems() {
+        keys = Object.keys(localStorage);
+        let cartProducts = '';
+        let total = 0;
+        for (let i = 0; i < keys.length; i++) {
+            let counter = localStorage.getItem(keys[i]);
+            let product = getProduct(keys[i]);
+            total += parseFloat(product.pret);
+            cartProducts += `
+            <tr>
+                <td>${i + 1}</td>
+                <td><img src="${product.image}"></td>
+                <td>${product.nume}</td>
+                <td>${product.pret} RON</td>
+                <td>${counter}</td>
+                <td><button class="btn btn-danger" onclick="deleteCartItem('${keys[i]}')"><i class="fas fa-trash"></i></button></td>
+            </tr>
+        `;
+        }
+        select('.products-table tbody').innerHTML = cartProducts;
+        select('.total').innerHTML = parseFloat(total);
+        select('.numar-produse').innerHTML = keys.length;
+    }
+    function deleteCartItem(id) {
+        localStorage.removeItem(id);
+        getCartItems();
+    }
+
 </script>
 </body>
 </html>
